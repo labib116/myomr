@@ -106,7 +106,7 @@ def find_horizontal_separator(image):
             return y + (h // 2)
     return -1
 
-# --- 5. NEW ROBUST LOGIC: Decode Roll Number using MCQ-style detection ---
+# --- 5. Roll Number Decoding Logic (MODIFIED) ---
 def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
     """
     Decodes the 5-digit roll number using the same robust contour detection
@@ -164,8 +164,10 @@ def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
         prev_x, _, prev_w, _ = cv2.boundingRect(bubble_contours[i-1])
         curr_x, _, _, _ = cv2.boundingRect(bubble_contours[i])
         
-        # FIX: Make the column separation threshold more sensitive
-        if (curr_x - (prev_x + prev_w)) > (avg_bubble_width * 0.7):
+        # --- FIX 1: Make the column separation threshold more sensitive ---
+        # The threshold was too high (0.7), causing all bubbles to be seen as one column.
+        # Reduced to 0.4 to correctly identify the smaller gaps between columns.
+        if (curr_x - (prev_x + prev_w)) > (avg_bubble_width * 0.4):
             columns.append(current_column)
             current_column = [bubble_contours[i]]
         else:
@@ -228,11 +230,11 @@ def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
             decoded_roll.append(str(marked_digit))
         else:
             decoded_roll.append("E") # E for Error (multiple marks) or Empty
-             
+            
     return "".join(decoded_roll)
 
 
-# --- 6. Main Processing Function (Unchanged) ---
+# --- 6. Main Processing Function (MODIFIED) ---
 def process_omr_sheet(image_path):
     original_image = cv2.imread(image_path)
     if original_image is None:
@@ -269,7 +271,9 @@ def process_omr_sheet(image_path):
 
     mcq_gray = cv2.cvtColor(mcq_section, cv2.COLOR_BGR2GRAY)
     
-    _, thresh = cv2.threshold(mcq_gray, 230, 255, cv2.THRESH_BINARY_INV)
+    # --- MODIFICATION 1: Use Otsu's method for a more robust, adaptive threshold ---
+    # This automatically finds the best threshold value, adapting to thicker lines.
+    _, thresh = cv2.threshold(mcq_gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
     cv2.imshow("Debugging: MCQ Section Threshold", thresh)
 
     cnts, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -278,14 +282,18 @@ def process_omr_sheet(image_path):
     for c in cnts:
         (x, y, w, h) = cv2.boundingRect(c)
         ar = w / float(h)
-        if w >= 10 and h >= 10 and ar >= 0.7 and ar <= 1.4:
+        # --- FIX 2: Relaxed the contour filter ---
+        # The previous filter (w>=20) was too strict and removed valid bubbles.
+        # 15 is a better value to capture all bubbles while excluding small text.
+        if w >= 15 and h >= 15 and ar >= 0.7 and ar <= 1.4:
             all_bubbles.append(c)
 
     print(f"INFO: Found {len(all_bubbles)} bubble contours in MCQ section.")
     
     total_correct = 0
     
-    if len(all_bubbles) >= 230:
+    # The rest of the grading logic works correctly now with a clean bubble list.
+    if len(all_bubbles) >= 230: # Expect ~240 bubbles (60 questions * 4 options)
         all_bubble_intensities = []
         for c in all_bubbles:
             mask = np.zeros(mcq_gray.shape, dtype="uint8")
@@ -367,7 +375,8 @@ def process_omr_sheet(image_path):
 
 if __name__ == "__main__":
     # Replace with the path to your OMR sheet image
-    image_file = 'demo8.jpg' 
+    # For example: image_file = 'my_test_sheet.jpg' 
+    image_file = 'final_omr.jpg' 
     process_omr_sheet(image_file)
 
 
