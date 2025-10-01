@@ -1,0 +1,11 @@
+2025-10-02 03:19:49,526 - INFO - Found horizontal separator at y=424
+2025-10-02 03:19:49,529 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-02 03:19:49,530 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-02 03:19:49,541 - INFO - Roll number grading threshold: 94.37
+2025-10-02 03:19:49,551 - INFO - --- Decoded Roll Number: 54313 ---
+2025-10-02 03:19:49,555 - INFO - Found 240 bubble contours in MCQ section.
+2025-10-02 03:19:49,655 - INFO - Dynamic Intensity Threshold calculated: 134.95
+2025-10-02 03:19:49,752 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-02 03:19:49,752 - INFO - Writing results to 54313_results.csv
