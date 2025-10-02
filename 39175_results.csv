@@ -11,7 +11,6 @@ Question Number,Student Answer,Correct Answer,Result
 7,B,B,Correct
 8,Blank,C,Incorrect
 9,A,D,Incorrect
-10,Blank,A,Incorrect
 11,Blank,B,Incorrect
 12,B,D,Incorrect
 13,Blank,A,Incorrect
@@ -48,7 +47,6 @@ Question Number,Student Answer,Correct Answer,Result
 44,A,C,Incorrect
 45,D,A,Incorrect
 46,Error,B,Incorrect
-47,C,D,Incorrect
 48,C,A,Incorrect
 49,C,C,Correct
 50,C,B,Incorrect

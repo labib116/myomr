@@ -200,7 +200,7 @@ def process_omr_sheet(image_path):
     paper = four_point_transform(original_image, corners)
     
     h_paper, w_paper = paper.shape[:2]
-    crop_margin_top = int(h_paper * 0.05); crop_margin_bottom = int(h_paper * 0.03) 
+    crop_margin_top = int(h_paper * 0.03); crop_margin_bottom = int(h_paper * 0.03) 
     crop_margin_x = int(w_paper * 0.05)
     cropped_paper = paper[crop_margin_top:h_paper - crop_margin_bottom, crop_margin_x:w_paper - crop_margin_x]
     
@@ -325,7 +325,7 @@ def process_omr_sheet(image_path):
 
 if __name__ == "__main__":
     # Ensure this path is correct for your system
-    image_file = 'CamScanner 02-10-2025 19.26_7.jpg' 
+    image_file = 'CamScanner 02-10-2025 19.26_9.jpg' 
     process_omr_sheet(image_file)
 
 

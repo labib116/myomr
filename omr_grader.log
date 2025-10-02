@@ -201,3 +201,177 @@ Correct Answers: 6 / 60
 Score: 10.00%
 2025-10-02 21:01:55,047 - WARNING - Invalid roll number '7EE19'. Saving results using image filename: CamScanner 02-10-2025 19.26_7_error_results.csv
 2025-10-02 21:01:55,047 - INFO - Writing results to CamScanner 02-10-2025 19.26_7_error_results.csv
+2025-10-02 21:03:28,938 - INFO - Found horizontal separator at y=830
+2025-10-02 21:03:28,944 - INFO - Found 57 potential bubble contours in roll number section.
+2025-10-02 21:03:28,945 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-02 21:03:29,014 - INFO - Roll number grading threshold: 110.31
+2025-10-02 21:03:29,058 - INFO - --- Decoded Roll Number: 58269 ---
+2025-10-02 21:03:29,058 - INFO - Cropping 60 pixels from MCQ section top to remove header.
+2025-10-02 21:03:29,112 - INFO - Found 240 bubble contours in MCQ section.
+2025-10-02 21:03:29,507 - INFO - Dynamic Intensity Threshold calculated: 93.63
+2025-10-02 21:03:29,882 - INFO - --- OMR Grading Results ---
+Correct Answers: 2 / 60
+Score: 3.33%
+2025-10-02 21:03:29,882 - INFO - Writing results to 58269_results.csv
+2025-10-02 21:04:01,854 - INFO - Found horizontal separator at y=804
+2025-10-02 21:04:01,861 - INFO - Found 59 potential bubble contours in roll number section.
+2025-10-02 21:04:01,862 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-02 21:04:01,916 - INFO - Roll number grading threshold: 59.99
+2025-10-02 21:04:01,955 - INFO - --- Decoded Roll Number: EE36E ---
+2025-10-02 21:04:01,955 - INFO - Cropping 59 pixels from MCQ section top to remove header.
+2025-10-02 21:04:02,003 - INFO - Found 240 bubble contours in MCQ section.
+2025-10-02 21:04:02,394 - INFO - Dynamic Intensity Threshold calculated: 90.14
+2025-10-02 21:04:02,741 - INFO - --- OMR Grading Results ---
+Correct Answers: 3 / 60
+Score: 5.00%
+2025-10-02 21:04:02,741 - WARNING - Invalid roll number 'EE36E'. Saving results using image filename: CamScanner 02-10-2025 19.26_9_error_results.csv
+2025-10-02 21:04:02,741 - INFO - Writing results to CamScanner 02-10-2025 19.26_9_error_results.csv
+2025-10-02 21:21:55,133 - INFO - Found horizontal separator at y=847
+2025-10-02 21:21:55,140 - INFO - Found 59 potential bubble contours in roll number section.
+2025-10-02 21:21:55,140 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-02 21:21:55,192 - INFO - Roll number grading threshold: 59.99
+2025-10-02 21:21:55,236 - INFO - --- Decoded Roll Number: EE36E ---
+2025-10-02 21:21:55,236 - INFO - Cropping 59 pixels from MCQ section top to remove header.
+2025-10-02 21:21:55,266 - INFO - Found 240 bubble contours in MCQ section.
+2025-10-02 21:21:55,642 - INFO - Dynamic Intensity Threshold calculated: 90.14
+2025-10-02 21:21:55,991 - INFO - --- OMR Grading Results ---
+Correct Answers: 3 / 60
+Score: 5.00%
+2025-10-02 21:21:55,992 - WARNING - Invalid roll number 'EE36E'. Saving results using image filename: CamScanner 02-10-2025 19.26_9_error_results.csv
+2025-10-02 21:21:55,992 - INFO - Writing results to CamScanner 02-10-2025 19.26_9_error_results.csv
+2025-10-03 00:53:48,260 - INFO - Found horizontal separator at y=837
+2025-10-03 00:53:48,265 - INFO - Found 58 potential bubble contours in roll number section.
+2025-10-03 00:53:48,266 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-03 00:53:48,318 - INFO - Roll number grading threshold: 110.65
+2025-10-03 00:53:48,367 - INFO - --- Decoded Roll Number: 39175 ---
+2025-10-03 00:53:48,367 - INFO - Cropping 61 pixels from MCQ section top to remove header.
+2025-10-03 00:53:48,399 - INFO - Found 300 bubble contours in MCQ section.
+2025-10-03 00:53:48,906 - INFO - Dynamic Intensity Threshold calculated: 104.34
+2025-10-03 00:53:48,907 - INFO - Dynamically found column splits at x=540 and x=1073
+2025-10-03 00:53:48,907 - INFO - Assigned bubbles to columns: Col 1 (96), Col 2 (95), Col 3 (109)
+2025-10-03 00:53:48,997 - INFO - --- OMR Grading Results ---
+Correct Answers: 2 / 60
+Score: 3.33%
+2025-10-03 00:53:48,998 - INFO - Writing results to 39175_results.csv
+2025-10-03 00:59:41,834 - INFO - Found horizontal separator at y=837
+2025-10-03 00:59:41,839 - INFO - Found 58 potential bubble contours in roll number section.
+2025-10-03 00:59:41,839 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-03 00:59:41,885 - INFO - Roll number grading threshold: 110.65
+2025-10-03 00:59:41,925 - INFO - --- Decoded Roll Number: 39175 ---
+2025-10-03 00:59:41,925 - INFO - Cropping 61 pixels from MCQ section top to remove header.
+2025-10-03 00:59:41,986 - INFO - Found 242 bubble contours in MCQ section.
+2025-10-03 00:59:42,421 - INFO - Dynamic Intensity Threshold calculated: 93.48
+2025-10-03 00:59:42,422 - INFO - Dynamically found column splits at x=613 and x=1076
+2025-10-03 00:59:42,423 - INFO - Assigned bubbles to columns: Col 1 (81), Col 2 (80), Col 3 (81)
+2025-10-03 00:59:42,784 - INFO - --- OMR Grading Results ---
+Correct Answers: 11 / 60
+Score: 18.33%
+2025-10-03 00:59:42,784 - INFO - Writing results to 39175_results.csv
+2025-10-03 01:10:07,283 - WARNING - Could not find solid horizontal line. Trying robust contour gap analysis.
+2025-10-03 01:10:07,286 - ERROR - Robust split also failed. Falling back to 40% percentage split.
+2025-10-03 01:10:07,287 - INFO - Final section split at y=367
+2025-10-03 01:10:07,288 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 01:10:07,288 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 01:10:07,289 - INFO - Cropping 26 pixels from MCQ section top to remove header.
+2025-10-03 01:10:07,308 - INFO - Found 0 bubble contours in MCQ section.
+2025-10-03 01:10:07,308 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 01:10:07,308 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: bangla_omr_final_error_results.csv
+2025-10-03 01:10:07,309 - INFO - Writing results to bangla_omr_final_error_results.csv
+2025-10-03 01:10:55,816 - INFO - Final section split at y=309
+2025-10-03 01:10:55,819 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 01:10:55,820 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 01:10:55,832 - INFO - Roll number grading threshold: 147.35
+2025-10-03 01:10:55,843 - INFO - --- Decoded Roll Number: EEEEE ---
+2025-10-03 01:10:55,843 - INFO - Cropping 19 pixels from MCQ section top to remove header.
+2025-10-03 01:10:55,870 - INFO - Found 225 bubble contours in MCQ section.
+2025-10-03 01:10:55,870 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 01:10:55,871 - WARNING - Invalid roll number 'EEEEE'. Saving results using image filename: bangla_omr_error_results.csv
+2025-10-03 01:10:55,871 - INFO - Writing results to bangla_omr_error_results.csv
+2025-10-03 01:20:20,064 - INFO - Robust split found a gap of 33 pixels. Split Y at 291.
+2025-10-03 01:20:20,066 - INFO - Final section split at y=291
+2025-10-03 01:20:20,081 - INFO - Found 52 potential bubble contours in roll number section.
+2025-10-03 01:20:20,081 - INFO - Clustered roll number bubbles into 4 columns.
+2025-10-03 01:20:20,082 - ERROR - Expected 5 or 6 columns for roll number, but found 4.
+2025-10-03 01:20:20,082 - INFO - --- Decoded Roll Number: Column Count Error ---
+2025-10-03 01:20:20,083 - INFO - Found vertical separators at x=122 and x=386
+2025-10-03 01:20:20,084 - WARNING - MCQ Section 1 has only 60 contours.
+2025-10-03 01:20:20,086 - INFO - MCQ Section 2: Clustered into 2 columns.
+2025-10-03 01:20:20,086 - ERROR - MCQ Section 2: Expected 5 columns, found 2.
+2025-10-03 01:20:20,087 - WARNING - MCQ Section 3 has only 45 contours.
+2025-10-03 01:20:20,087 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 01:20:20,087 - WARNING - Invalid roll number 'Column Count Error'. Saving results using image filename: bangla_omr_error_results.csv
+2025-10-03 01:20:20,087 - INFO - Writing results to bangla_omr_error_results.csv
+2025-10-03 01:25:38,174 - INFO - Final section split at y=325
+2025-10-03 01:25:38,177 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 01:25:38,178 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 01:25:38,186 - INFO - Roll number grading threshold: 147.35
+2025-10-03 01:25:38,193 - INFO - --- Decoded Roll Number: EEEEE ---
+2025-10-03 01:25:38,195 - INFO - Found vertical separators at x=122 and x=386
+2025-10-03 01:25:38,196 - WARNING - MCQ Section 1 has only 60 contours.
+2025-10-03 01:25:38,198 - INFO - MCQ Section 2: Clustered into 2 columns.
+2025-10-03 01:25:38,199 - ERROR - MCQ Section 2: Expected 5 columns, found 2.
+2025-10-03 01:25:38,199 - WARNING - MCQ Section 3 has only 45 contours.
+2025-10-03 01:25:38,199 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 01:25:38,200 - WARNING - Invalid roll number 'EEEEE'. Saving results using image filename: bangla_omr_error_results.csv
+2025-10-03 01:25:38,200 - INFO - Writing results to bangla_omr_error_results.csv
+2025-10-03 01:35:45,647 - INFO - Final section split at y=325
+2025-10-03 01:35:45,651 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 01:35:45,653 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 01:35:45,665 - INFO - Roll number grading threshold: 147.35
+2025-10-03 01:35:45,672 - INFO - --- Decoded Roll Number: EEEEE ---
+2025-10-03 01:35:45,674 - INFO - Found vertical separators at x=122 and x=386
+2025-10-03 01:35:45,693 - WARNING - MCQ Section 1 has only 60 contours.
+2025-10-03 01:35:45,733 - INFO - MCQ Section 2: Clustered into 2 columns.
+2025-10-03 01:35:45,733 - ERROR - MCQ Section 2: Expected 5 columns, found 2.
+2025-10-03 01:35:45,752 - WARNING - MCQ Section 3 has only 45 contours.
+2025-10-03 01:35:45,752 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 01:35:45,752 - WARNING - Invalid roll number 'EEEEE'. Saving results using image filename: bangla_omr_error_results.csv
+2025-10-03 01:35:45,752 - INFO - Writing results to bangla_omr_error_results.csv
+2025-10-03 01:42:59,398 - INFO - Final section split at y=325
+2025-10-03 01:42:59,400 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 01:42:59,401 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 01:42:59,414 - INFO - Roll number grading threshold: 147.35
+2025-10-03 01:42:59,428 - INFO - --- Decoded Roll Number: EEEEE ---
+2025-10-03 01:42:59,431 - INFO - Found vertical separators at x=122, x=253, x=386
+2025-10-03 01:42:59,457 - INFO - MCQ Section 1: Clustered into 1 columns.
+2025-10-03 01:42:59,457 - ERROR - MCQ Section 1: Expected 4 or 5 columns, found 1.
+2025-10-03 01:42:59,476 - INFO - MCQ Section 2: Clustered into 1 columns.
+2025-10-03 01:42:59,476 - ERROR - MCQ Section 2: Expected 4 or 5 columns, found 1.
+2025-10-03 01:42:59,504 - INFO - MCQ Section 3: Clustered into 1 columns.
+2025-10-03 01:42:59,504 - ERROR - MCQ Section 3: Expected 4 or 5 columns, found 1.
+2025-10-03 01:42:59,524 - INFO - MCQ Section 4: Clustered into 1 columns.
+2025-10-03 01:42:59,525 - ERROR - MCQ Section 4: Expected 4 or 5 columns, found 1.
+2025-10-03 01:42:59,525 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 01:42:59,525 - WARNING - Invalid roll number 'EEEEE'. Saving results using image filename: bangla_omr_error_results.csv
+2025-10-03 01:42:59,525 - INFO - Writing results to bangla_omr_error_results.csv
+2025-10-03 01:49:55,043 - INFO - Final section split at y=325
+2025-10-03 01:49:55,046 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 01:49:55,047 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 01:49:55,055 - INFO - Roll number grading threshold: 147.35
+2025-10-03 01:49:55,062 - INFO - --- Decoded Roll Number: EEEEE ---
+2025-10-03 01:49:55,064 - INFO - Found vertical separators at x=122, x=253, x=386
+2025-10-03 01:49:55,093 - INFO - MCQ Section 1: Clustered into 4 columns.
+2025-10-03 01:49:55,098 - INFO - MCQ Section 1 grading threshold: 147.91
+2025-10-03 01:49:55,127 - INFO - MCQ Section 2: Clustered into 4 columns.
+2025-10-03 01:49:55,133 - INFO - MCQ Section 2 grading threshold: 149.93
+2025-10-03 01:49:55,173 - INFO - MCQ Section 3: Clustered into 4 columns.
+2025-10-03 01:49:55,180 - INFO - MCQ Section 3 grading threshold: 149.65
+2025-10-03 01:49:55,217 - INFO - MCQ Section 4: Clustered into 4 columns.
+2025-10-03 01:49:55,224 - INFO - MCQ Section 4 grading threshold: 147.18
+2025-10-03 01:49:55,230 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 01:49:55,231 - WARNING - Invalid roll number 'EEEEE'. Saving results using image filename: bangla_omr_error_results.csv
+2025-10-03 01:49:55,231 - INFO - Writing results to bangla_omr_error_results.csv
