@@ -8,14 +8,16 @@ import logging
 # --- New Function: Setup Logging ---
 def setup_logging():
     """Configures the logging system to output to both a file and the console."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler("omr_grader.log"), # Log file
-            logging.StreamHandler()                # Console output
-        ]
-    )
+    # This check prevents multiple handlers from being added if the function is called again.
+    if not logging.getLogger().handlers:
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler("omr_grader.log"), # Log file
+                logging.StreamHandler()                # Console output
+            ]
+        )
 
 # --- 1. Define the Answer Key and Choice Mapping ---
 ANSWER_KEY = {
@@ -125,7 +127,6 @@ def find_horizontal_separator(image):
 
 # --- 5. Roll Number Decoding (Unchanged) ---
 def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
-    # This function remains unchanged as per previous logic.
     if roll_section_image is None or roll_section_image.size == 0: return "N/A"
     h, w = roll_section_image.shape[:2]
     crop_y_start = int(h * 0.315); bubble_area = roll_section_image[crop_y_start:, :]
@@ -165,55 +166,47 @@ def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
         else: decoded_roll.append("E")
     return "".join(decoded_roll)
 
-# --- Function to Write Results to CSV (MODIFIED) ---
+# --- Function to Write Results to CSV (Unchanged) ---
 def write_results_to_csv(image_path, roll_number, student_answers, score):
-    """Saves the detailed grading results to a CSV file named after the student's roll number."""
-    
-    # --- MODIFICATION: Name the CSV file based on the student's roll number ---
-    # Check if the roll number is valid (e.g., 5 digits, no error characters).
     if roll_number and roll_number.isdigit() and len(roll_number) == 5:
         csv_filename = f"{roll_number}_results.csv"
     else:
-        # Fallback to the original image name if the roll number is invalid
         base_name = os.path.splitext(os.path.basename(image_path))[0]
-        csv_filename = f"{base_name}_error_results.csv" # Add 'error' to signify a problem
+        csv_filename = f"{base_name}_error_results.csv"
         logging.warning(f"Invalid roll number '{roll_number}'. Saving results using image filename: {csv_filename}")
 
     logging.info(f"Writing results to {csv_filename}")
-    
     try:
         with open(csv_filename, 'w', newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(['Roll Number', roll_number])
             writer.writerow(['Score (%)', f"{score:.2f}"])
-            writer.writerow([])
-            writer.writerow(['Question Number', 'Student Answer', 'Correct Answer', 'Result'])
+            writer.writerow([]); writer.writerow(['Question Number', 'Student Answer', 'Correct Answer', 'Result'])
             for answer in student_answers:
-                writer.writerow([
-                    answer['question'],
-                    answer['student_answer'],
-                    answer['correct_answer'],
-                    answer['result']
-                ])
+                writer.writerow([answer['question'], answer['student_answer'], answer['correct_answer'], answer['result']])
     except IOError as e:
         logging.error(f"Could not write to CSV file {csv_filename}. Reason: {e}")
 
-# --- 6. Main Processing Function (Unchanged) ---
+# --- 6. Main Processing Function (MODIFIED) ---
 def process_omr_sheet(image_path):
     setup_logging()
     original_image = cv2.imread(image_path)
     if original_image is None:
-        logging.error(f"Could not load image from {image_path}")
-        return
+        logging.error(f"Could not load image from {image_path}"); return
 
     corners = find_fiducial_markers(original_image)
     if corners is None: return
         
     paper = four_point_transform(original_image, corners)
-    h_paper, w_paper = paper.shape[:2]
-    crop_margin_y = int(h_paper * 0.05); crop_margin_x = int(w_paper * 0.05)
-    cropped_paper = paper[crop_margin_y:h_paper-crop_margin_y, crop_margin_x:w_paper-crop_margin_x]
     
+    h_paper, w_paper = paper.shape[:2]
+    crop_margin_top = int(h_paper * 0.05); crop_margin_bottom = int(h_paper * 0.03) 
+    crop_margin_x = int(w_paper * 0.05)
+    cropped_paper = paper[crop_margin_top:h_paper - crop_margin_bottom, crop_margin_x:w_paper - crop_margin_x]
+    
+    # --- ADDED DEBUGGING WINDOW ---
+    cv2.imshow("Debugging: Cropped Paper", cv2.resize(cropped_paper, (int(w_paper*0.5), int(h_paper*0.5))))
+
     h_crop, w_crop, _ = cropped_paper.shape
     split_y = find_horizontal_separator(cropped_paper)
     
@@ -223,22 +216,42 @@ def process_omr_sheet(image_path):
     else:
         logging.info(f"Found horizontal separator at y={split_y}")
 
-    roll_section = cropped_paper[0:split_y, :]; mcq_section = cropped_paper[split_y + 15:, :]
+    roll_section = cropped_paper[0:split_y, :]
+    mcq_section_full = cropped_paper[split_y + 15:, :] 
     output_image = cropped_paper.copy()
 
     roll_number = decode_roll_number(roll_section, output_image, 0)
     logging.info(f"--- Decoded Roll Number: {roll_number} ---")
 
+    mcq_h_full, _, _ = mcq_section_full.shape
+    header_crop_amount = int(mcq_h_full * 0.05) 
+    mcq_section = mcq_section_full[header_crop_amount:, :]
+    logging.info(f"Cropping {header_crop_amount} pixels from MCQ section top to remove header.")
+
     mcq_gray = cv2.cvtColor(mcq_section, cv2.COLOR_BGR2GRAY)
     _, thresh = cv2.threshold(mcq_gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
     
+    # --- NEW: Noise removal using Morphological Opening ---
+    kernel = np.ones((2,2),np.uint8) # A small kernel to remove small specks
+    thresh = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel)
+    
+    # --- ADDED DEBUGGING WINDOW ---
+    cv2.imshow("Debugging: MCQ Threshold with Noise Removal", thresh)
+
     cnts, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    all_bubbles = [c for c in cnts if 15 <= cv2.boundingRect(c)[2] <= 50 and 15 <= cv2.boundingRect(c)[3] <= 50]
+    
+    # --- MODIFIED: Stricter bubble filtering with aspect ratio ---
+    all_bubbles = []
+    for c in cnts:
+        (x, y, w, h) = cv2.boundingRect(c)
+        ar = w / float(h)
+        # Check for size and aspect ratio to ensure it's a bubble
+        if w >= 18 and h >= 18 and 0.7 <= ar <= 1.4:
+            all_bubbles.append(c)
+
     logging.info(f"Found {len(all_bubbles)} bubble contours in MCQ section.")
     
-    total_correct = 0
-    student_answers_data = []
-    
+    total_correct = 0; student_answers_data = []
     if len(all_bubbles) >= 230:
         all_bubble_intensities = [cv2.mean(mcq_gray, mask=cv2.drawContours(np.zeros(mcq_gray.shape, dtype="uint8"), [c], -1, 255, -1))[0] for c in all_bubbles]
         grading_threshold = get_intensity_threshold(all_bubble_intensities)
@@ -282,17 +295,15 @@ def process_omr_sheet(image_path):
                 if isinstance(correct_answers, list): correct_answer_char = ", ".join([CHOICE_MAP.get(ans) for ans in correct_answers])
                 else: correct_answer_char = CHOICE_MAP.get(correct_answers, 'N/A')
                 
-                student_answers_data.append({
-                    'question': question_num + 1, 'student_answer': student_answer_char,
-                    'correct_answer': correct_answer_char, 'result': 'Correct' if is_correct else 'Incorrect'
-                })
+                student_answers_data.append({'question': question_num + 1, 'student_answer': student_answer_char, 'correct_answer': correct_answer_char, 'result': 'Correct' if is_correct else 'Incorrect'})
 
                 if correct_answers is not None:
                     answers_to_draw = correct_answers if isinstance(correct_answers, list) else [correct_answers]
                     for answer_idx in answers_to_draw:
                         if answer_idx < len(question_bubbles):
                             (x_b, y_b, w_b, h_b) = cv2.boundingRect(question_bubbles[answer_idx])
-                            cv2.rectangle(output_image, (x_b, y_b + split_y + 15), (x_b + w_b, y_b + h_b + split_y + 15), color, 3)
+                            draw_y_offset = split_y + 15 + header_crop_amount
+                            cv2.rectangle(output_image, (x_b, y_b + draw_y_offset), (x_b + w_b, y_b + h_b + draw_y_offset), color, 3)
 
     score = (total_correct / 60.0) * 100 if len(ANSWER_KEY) > 0 else 0
     logging.info(f"--- OMR Grading Results ---\nCorrect Answers: {total_correct} / 60\nScore: {score:.2f}%")
@@ -305,17 +316,16 @@ def process_omr_sheet(image_path):
     h_final, w_final = output_image.shape[:2]
     max_height = 900
     if h_final > max_height:
-        ratio = max_height / h_final
-        result_image = cv2.resize(output_image, (int(w_final * ratio), max_height))
-    else:
-        result_image = output_image
+        ratio = max_height / h_final; result_image = cv2.resize(output_image, (int(w_final * ratio), max_height))
+    else: result_image = output_image
 
     cv2.imshow("Graded Sheet", result_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    image_file = 'im2.jpg' 
+    # Ensure this path is correct for your system
+    image_file = 'CamScanner 02-10-2025 19.26_7.jpg' 
     process_omr_sheet(image_file)
 
 
