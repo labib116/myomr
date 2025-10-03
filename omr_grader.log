@@ -816,3 +816,130 @@ Score: 0.00%
 Correct Answers: 7 / 60
 Score: 11.67%
 2025-10-03 20:27:19,016 - INFO - Writing results to 67890_results.csv
+2025-10-03 20:34:03,823 - INFO - Final section split at y=627
+2025-10-03 20:34:03,862 - INFO - Found 57 potential bubble contours in roll number section.
+2025-10-03 20:34:03,863 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-03 20:34:03,896 - INFO - Roll number grading threshold: 61.58
+2025-10-03 20:34:03,941 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 20:34:03,950 - INFO - Found 5 potential line contours. Analyzing each...
+2025-10-03 20:34:03,951 - INFO -   - Contour 0: height=521, width=6. (Height threshold is 411.50)
+2025-10-03 20:34:03,951 - INFO -     -> ACCEPTED. Appending x-coordinate 734.
+2025-10-03 20:34:03,951 - INFO -   - Contour 1: height=520, width=6. (Height threshold is 411.50)
+2025-10-03 20:34:03,951 - INFO -     -> ACCEPTED. Appending x-coordinate 487.
+2025-10-03 20:34:03,951 - INFO -   - Contour 2: height=49, width=4. (Height threshold is 411.50)
+2025-10-03 20:34:03,951 - INFO -     -> REJECTED.
+2025-10-03 20:34:03,951 - INFO -   - Contour 3: height=51, width=3. (Height threshold is 411.50)
+2025-10-03 20:34:03,951 - INFO -     -> REJECTED.
+2025-10-03 20:34:03,952 - INFO -   - Contour 4: height=574, width=6. (Height threshold is 411.50)
+2025-10-03 20:34:03,952 - INFO -     -> ACCEPTED. Appending x-coordinate 242.
+2025-10-03 20:34:03,952 - INFO - Found 3 vertical separator clusters at x=[242, 487, 734]
+2025-10-03 20:34:03,952 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 20:34:04,058 - INFO - MCQ Section 1: Clustered into 5 columns.
+2025-10-03 20:34:04,058 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:34:04,092 - INFO - MCQ Section 1 grading threshold: 92.70
+2025-10-03 20:34:04,118 - INFO - MCQ Section 2: Clustered into 5 columns.
+2025-10-03 20:34:04,119 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:34:04,177 - INFO - MCQ Section 2 grading threshold: 103.34
+2025-10-03 20:34:04,202 - INFO - MCQ Section 3: Clustered into 5 columns.
+2025-10-03 20:34:04,202 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:34:04,255 - INFO - MCQ Section 3 grading threshold: 96.33
+2025-10-03 20:34:04,277 - INFO - MCQ Section 4: Clustered into 5 columns.
+2025-10-03 20:34:04,277 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:34:04,326 - INFO - MCQ Section 4 grading threshold: 93.82
+2025-10-03 20:34:04,352 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 11.67%
+2025-10-03 20:34:04,353 - INFO - Writing results to 67890_results.csv
+2025-10-03 20:34:44,810 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:34:44,812 - INFO - Final section split at y=379
+2025-10-03 20:34:44,873 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:34:44,874 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:34:44,884 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 20:34:44,885 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 20:34:44,885 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 20:34:44,885 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:34:44,885 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 20:34:44,885 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 20:42:39,513 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:42:39,514 - INFO - Final section split at y=379
+2025-10-03 20:42:39,616 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:42:39,616 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:53:37,807 - INFO - Loaded image 'final_4.jpg' with dimensions: 1134x1600, Channels: 3
+2025-10-03 20:53:37,850 - INFO - Displaying 'Debug: Fiducial Marker Threshold'. Press any key to continue.
+2025-10-03 20:53:52,513 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:53:52,514 - INFO - Final section split at y=379
+2025-10-03 20:53:52,662 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:53:52,663 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:54:03,700 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 20:54:03,703 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 20:54:03,704 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 20:54:03,705 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:54:03,705 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 20:54:03,706 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 20:55:41,516 - INFO - Loaded image 'final_4.jpg' with dimensions: 1134x1600, Channels: 3
+2025-10-03 20:55:41,561 - INFO - Displaying 'Debug: Fiducial Marker Threshold'. Press any key to continue.
+2025-10-03 20:55:57,462 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:55:57,462 - INFO - Final section split at y=379
+2025-10-03 20:55:57,711 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:55:57,711 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:56:15,959 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 20:56:15,959 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 20:56:15,960 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 20:56:15,960 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:56:15,961 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 20:56:15,961 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 20:59:23,523 - INFO - Loaded image 'final_4.jpg' with dimensions: 1134x1600, Channels: 3
+2025-10-03 20:59:23,569 - INFO - Displaying 'Debug: Fiducial Marker Threshold'. Press any key to continue.
+2025-10-03 21:00:52,554 - INFO - Found 308 contours that match fiducial marker criteria.
+2025-10-03 21:00:52,700 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 21:00:52,701 - INFO - Final section split at y=379
+2025-10-03 21:00:52,872 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 21:00:52,873 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 21:01:03,080 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 21:01:03,082 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 21:01:03,083 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 21:01:03,084 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 21:01:03,085 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 21:01:03,085 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 21:01:41,702 - ERROR - Could not load image from final_5.jpg
+2025-10-03 21:02:12,836 - INFO - Loaded image 'final_5.jpg' with dimensions: 905x1280, Channels: 3
+2025-10-03 21:02:12,879 - INFO - Displaying 'Debug: Fiducial Marker Threshold'. Press any key to continue.
+2025-10-03 21:02:20,175 - INFO - Found 295 contours that match fiducial marker criteria.
+2025-10-03 21:02:20,276 - INFO - Final section split at y=505
+2025-10-03 21:02:20,483 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 21:02:20,485 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 21:02:20,546 - INFO - Roll number grading threshold: 79.11
+2025-10-03 21:02:20,598 - INFO - --- Decoded Roll Number: 45457 ---
+2025-10-03 21:02:45,817 - INFO - Found 3 potential line contours. Analyzing each...
+2025-10-03 21:02:45,818 - INFO -   - Contour 0: height=463, width=4. (Height threshold is 331.50)
+2025-10-03 21:02:45,820 - INFO -     -> ACCEPTED. Appending x-coordinate 597.
+2025-10-03 21:02:45,820 - INFO -   - Contour 1: height=463, width=4. (Height threshold is 331.50)
+2025-10-03 21:02:45,820 - INFO -     -> ACCEPTED. Appending x-coordinate 395.
+2025-10-03 21:02:45,821 - INFO -   - Contour 2: height=463, width=3. (Height threshold is 331.50)
+2025-10-03 21:02:45,821 - INFO -     -> ACCEPTED. Appending x-coordinate 194.
+2025-10-03 21:02:45,821 - INFO - Found 3 vertical separator clusters at x=[194, 395, 597]
+2025-10-03 21:02:45,822 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 21:02:45,995 - INFO - MCQ Section 1: Clustered into 5 columns.
+2025-10-03 21:02:45,995 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 21:02:46,092 - INFO - MCQ Section 1 grading threshold: 86.81
+2025-10-03 21:02:46,139 - INFO - MCQ Section 2: Clustered into 4 columns.
+2025-10-03 21:02:46,140 - INFO -   -> Found 4 columns, assuming they are the answer bubbles.
+2025-10-03 21:02:46,248 - INFO - MCQ Section 2 grading threshold: 88.00
+2025-10-03 21:02:46,289 - INFO - MCQ Section 3: Clustered into 5 columns.
+2025-10-03 21:02:46,289 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 21:02:46,392 - INFO - MCQ Section 3 grading threshold: 83.79
+2025-10-03 21:02:46,444 - INFO - MCQ Section 4: Clustered into 5 columns.
+2025-10-03 21:02:46,445 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 21:02:46,537 - INFO - MCQ Section 4 grading threshold: 80.97
+2025-10-03 21:02:46,564 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 11.67%
+2025-10-03 21:02:46,565 - INFO - Writing results to 45457_results.csv

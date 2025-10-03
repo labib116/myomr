@@ -28,7 +28,7 @@ ANSWER_KEY = {
 CHOICE_MAP = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
 
 
-# --- 2. Alignment Functions (Unchanged) ---
+# --- 2. Alignment Functions (MODIFIED with debugging) ---
 def reorder(myPoints):
     myPoints = myPoints.reshape((4, 2))
     myPointsNew = np.zeros((4, 2), np.float32)
@@ -43,7 +43,14 @@ def reorder(myPoints):
 def find_fiducial_markers(image):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+    # Using a fixed threshold for fiducial markers is usually reliable, but we add debug to check it.
     _, thresh = cv2.threshold(blurred, 200, 255, cv2.THRESH_BINARY_INV)
+    
+    # --- ADDED: Debugging visualization for marker detection ---
+    cv2.imshow("Debug: Fiducial Marker Threshold", thresh)
+    logging.info("Displaying 'Debug: Fiducial Marker Threshold'. Press any key to continue.")
+    cv2.waitKey(0)
+
     cnts, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     marker_contours = []
     for c in cnts:
@@ -52,6 +59,10 @@ def find_fiducial_markers(image):
         area = cv2.contourArea(c)
         if 0.8 <= aspect_ratio <= 1.2 and 100 < area < 10000:
             marker_contours.append(c)
+
+    # --- ADDED: Log the number of markers found ---
+    logging.info(f"Found {len(marker_contours)} contours that match fiducial marker criteria.")
+
     if len(marker_contours) < 4:
         logging.error(f"Found only {len(marker_contours)} fiducial markers. Cannot align.")
         return None
@@ -80,7 +91,13 @@ def four_point_transform(image, pts):
     matrix = cv2.getPerspectiveTransform(pts, dst)
     return cv2.warpPerspective(image, matrix, (maxWidth, maxHeight))
 
-# --- 3. Bubble Detection Helpers (Unchanged) ---
+# --- 3. Bubble Detection Helpers ---
+def enhance_contrast(gray_image):
+    """Applies CLAHE to a grayscale image to improve contrast."""
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    enhanced = clahe.apply(gray_image)
+    return enhanced
+
 def get_intensity_threshold(intensities, min_jump=15):
     if not intensities: return 150
     intensities.sort()
@@ -103,11 +120,13 @@ def group_bubbles_into_rows(bubbles, tolerance=10):
     rows.append(current_row)
     return rows
 
-# --- 4. Separator Logic (Unchanged) ---
+# --- 4. Separator Logic (MODIFIED with Adaptive Thresholding) ---
 def find_horizontal_separator(image):
     h_img, w_img = image.shape[:2]
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
+    enhanced_gray = enhance_contrast(gray)
+    thresh = cv2.adaptiveThreshold(enhanced_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                   cv2.THRESH_BINARY_INV, 21, 5)
     cnts, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     for c in cnts:
         x, y, w, h = cv2.boundingRect(c)
@@ -118,10 +137,13 @@ def find_horizontal_separator(image):
 def find_vertical_separators(image, debug=False):
     h, w = image.shape[:2]
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
+    enhanced_gray = enhance_contrast(gray)
+    thresh = cv2.adaptiveThreshold(enhanced_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                   cv2.THRESH_BINARY_INV, 21, 5)
     vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 40))
     detected_lines = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, vertical_kernel, iterations=1)
     if debug:
+        cv2.imshow("Debug: Vertical Separator Enhanced Gray", cv2.resize(enhanced_gray, (w // 2, h // 2)))
         cv2.imshow("Debug: Vertical Separator Threshold", cv2.resize(thresh, (w // 2, h // 2)))
         cv2.imshow("Debug: Detected Vertical Lines", cv2.resize(detected_lines, (w // 2, h // 2)))
         cv2.waitKey(0)
@@ -157,7 +179,7 @@ def find_vertical_separators(image, debug=False):
     logging.warning(f"Could not find 3 clear vertical separator lines. Found {len(lines)} accepted candidates which clustered into {len(separator_xs) if 'separator_xs' in locals() else 0} groups.")
     return None, None, None
 
-# --- 5. Roll Number Decoding (MODIFIED with Debug Visuals) ---
+# --- 5. Roll Number Decoding (MODIFIED with Adaptive Thresholding) ---
 def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
     if roll_section_image is None or roll_section_image.size == 0: return "N/A"
     
@@ -165,33 +187,33 @@ def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
     crop_y_start = int(h * 0.315)
     bubble_area = roll_section_image[crop_y_start:, :]
     
-    # --- ADDITION: Create a debug image for the cropped bubble area ---
     debug_bubble_area = bubble_area.copy()
 
+    # Keep original gray for intensity analysis later
     gray = cv2.cvtColor(bubble_area, cv2.COLOR_BGR2GRAY)
-    thresh = cv2.threshold(gray, 220, 255, cv2.THRESH_BINARY_INV)[1]
     
-    # --- ADDITION: Show the thresholded image for debugging ---
+    # Enhance contrast specifically for finding contours
+    enhanced_gray = enhance_contrast(gray)
+    
+    thresh = cv2.adaptiveThreshold(enhanced_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                   cv2.THRESH_BINARY_INV, 15, 5)
+    
+    cv2.imshow("Debug: Roll Number Enhanced Contrast", enhanced_gray)
     cv2.imshow("Debug: Roll Number Threshold", thresh)
 
     cnts, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     bubble_contours = []
 
-    # --- ADDITION: First, draw ALL found contours in RED ---
     for c in cnts:
         (x, y, w_c, h_c) = cv2.boundingRect(c)
-        cv2.rectangle(debug_bubble_area, (x, y), (x + w_c, y + h_c), (0, 0, 255), 2) # Red for all candidates
+        cv2.rectangle(debug_bubble_area, (x, y), (x + w_c, y + h_c), (0, 0, 255), 2)
 
-    # --- EXISTING LOGIC with added drawing for accepted contours ---
     for c in cnts:
         (x, y, w_c, h_c) = cv2.boundingRect(c); ar = w_c / float(h_c)
-        # This is the core logic you didn't want changed.
         if 10 < w_c < 50 and 10 < h_c < 50 and 0.7 <= ar <= 1.3:
             bubble_contours.append(c)
-            # --- ADDITION: Draw accepted contours over in GREEN ---
-            cv2.rectangle(debug_bubble_area, (x, y), (x + w_c, y + h_c), (0, 255, 0), 2) # Green for accepted
+            cv2.rectangle(debug_bubble_area, (x, y), (x + w_c, y + h_c), (0, 255, 0), 2)
 
-    # --- ADDITION: Show the final debug image with classifications ---
     cv2.imshow("Debug: Roll Number Contours (Red=All, Green=Accepted)", debug_bubble_area)
 
     logging.info(f"Found {len(bubble_contours)} potential bubble contours in roll number section.")
@@ -212,6 +234,7 @@ def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
     else: logging.error(f"Expected 5 or 6 columns for roll number, but found {len(columns)}."); return "Column Count Error"
     
     decoded_roll = []
+    # IMPORTANT: Use the original 'gray' image for grading, not the enhanced one
     all_bubble_intensities = [cv2.mean(gray, mask=cv2.drawContours(np.zeros(gray.shape, dtype="uint8"), [c], -1, 255, -1))[0] for c in bubble_contours]
     grading_threshold = get_intensity_threshold(all_bubble_intensities)
     logging.info(f"Roll number grading threshold: {grading_threshold:.2f}")
@@ -222,19 +245,27 @@ def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
         marked_count = 0; marked_digit = -1
         for i, bubble_c in enumerate(column_sorted):
             mask = np.zeros(gray.shape, dtype="uint8"); cv2.drawContours(mask, [bubble_c], -1, 255, -1)
+            # Use original 'gray' for intensity check
             if cv2.mean(gray, mask=mask)[0] < grading_threshold: marked_digit = i; marked_count += 1
         if marked_count == 1: decoded_roll.append(str(marked_digit))
         else: decoded_roll.append("E")
     return "".join(decoded_roll)
 
-# --- 6. MCQ Section Grading Function (Unchanged from previous version) ---
+# --- 6. MCQ Section Grading Function (MODIFIED with Adaptive Thresholding) ---
 def grade_mcq_section(section_image, question_offset, output_image, section_x_offset, section_y_offset):
     if section_image is None or section_image.size == 0: return [], 0
     h_sec, w_sec = section_image.shape[:2]
     debug_section_image = section_image.copy()
     section_image = section_image[int(h_sec * 0.05):, :]
+    
+    # Keep original gray for intensity analysis
     gray = cv2.cvtColor(section_image, cv2.COLOR_BGR2GRAY)
-    thresh = cv2.threshold(gray, 220, 255, cv2.THRESH_BINARY_INV)[1]
+    # Enhance contrast for contour finding
+    enhanced_gray = enhance_contrast(gray)
+
+    thresh = cv2.adaptiveThreshold(enhanced_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                   cv2.THRESH_BINARY_INV, 15, 5)
+    
     cnts, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     bubble_contours = []
     for c in cnts:
@@ -274,6 +305,8 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
         cv2.rectangle(debug_section_image, (x, y + int(h_sec * 0.05)), (x + w, y + h + int(h_sec * 0.05)), (0, 255, 0), 2)
     cv2.imshow(f"Debug Contours: Section {question_offset//15 + 1}", debug_section_image)
     section_answers = []; section_correct = 0
+    
+    # IMPORTANT: Use original 'gray' image for grading
     all_bubble_intensities = [cv2.mean(gray, mask=cv2.drawContours(np.zeros(gray.shape, dtype="uint8"), [c], -1, 255, -1))[0] for c in all_bubbles_in_section]
     grading_threshold = get_intensity_threshold(all_bubble_intensities)
     logging.info(f"MCQ Section {question_offset//15 + 1} grading threshold: {grading_threshold:.2f}")
@@ -287,6 +320,7 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
         marked_choice_idx = -1; marked_count = 0
         for choice_idx, bubble_contour in enumerate(question_bubbles):
             mask = cv2.drawContours(np.zeros(gray.shape, dtype="uint8"), [bubble_contour], -1, 255, -1)
+            # Use original 'gray' for intensity check
             if cv2.mean(gray, mask=mask)[0] < grading_threshold:
                 marked_choice_idx = choice_idx; marked_count += 1
         is_correct = False
@@ -312,7 +346,8 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
 
 # --- Function to Write Results to CSV (Unchanged) ---
 def write_results_to_csv(image_path, roll_number, student_answers, score):
-    if roll_number and roll_number.isdigit() and len(roll_number) == 5: csv_filename = f"{roll_number}_results.csv"
+    if roll_number and roll_number.isdigit() and len(roll_number) >= 5: # Allow longer roll numbers
+        csv_filename = f"{roll_number}_results.csv"
     else:
         base_name = os.path.splitext(os.path.basename(image_path))[0]
         csv_filename = f"{base_name}_error_results.csv"
@@ -327,11 +362,18 @@ def write_results_to_csv(image_path, roll_number, student_answers, score):
     except IOError as e:
         logging.error(f"Could not write to CSV file {csv_filename}. Reason: {e}")
 
-# --- Main Processing Function (Unchanged) ---
+# --- Main Processing Function (MODIFIED with debugging) ---
 def process_omr_sheet(image_path):
     setup_logging()
     original_image = cv2.imread(image_path)
-    if original_image is None: logging.error(f"Could not load image from {image_path}"); return
+    if original_image is None: 
+        logging.error(f"Could not load image from {image_path}"); 
+        return
+
+    # --- ADDED: Log image properties ---
+    h, w, *c = original_image.shape
+    channels = c[0] if c else 1
+    logging.info(f"Loaded image '{image_path}' with dimensions: {w}x{h}, Channels: {channels}")
 
     corners = find_fiducial_markers(original_image)
     if corners is None: return
@@ -359,7 +401,7 @@ def process_omr_sheet(image_path):
     logging.info(f"--- Decoded Roll Number: {roll_number} ---")
 
     total_correct, all_student_answers = 0, []
-    split_x1, split_x2, split_x3 = find_vertical_separators(mcq_section_full, debug=False)
+    split_x1, split_x2, split_x3 = find_vertical_separators(mcq_section_full, debug=True)
 
     if split_x1 and split_x2 and split_x3:
         section1 = mcq_section_full[:, :split_x1]
@@ -402,8 +444,8 @@ def process_omr_sheet(image_path):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    # --- MODIFIED: Switched to the new image file for testing ---
-    image_file = 'final_3.jpg' 
+    image_file = 'final_5.jpg' 
     process_omr_sheet(image_file)
+
 
 
