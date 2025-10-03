@@ -251,12 +251,15 @@ def decode_roll_number(roll_section_image, output_image_to_draw, y_offset):
         else: decoded_roll.append("E")
     return "".join(decoded_roll)
 
-# --- 6. MCQ Section Grading Function (MODIFIED with Adaptive Thresholding) ---
+# --- 6. MCQ Section Grading Function (REVERTED and MODIFIED with Smart Row Handling) ---
 def grade_mcq_section(section_image, question_offset, output_image, section_x_offset, section_y_offset):
     if section_image is None or section_image.size == 0: return [], 0
     h_sec, w_sec = section_image.shape[:2]
     debug_section_image = section_image.copy()
-    section_image = section_image[int(h_sec * 0.05):, :]
+    
+    # Crop the top 5% to remove headers
+    y_crop_offset = int(h_sec * 0.05)
+    section_image = section_image[y_crop_offset:, :]
     
     # Keep original gray for intensity analysis
     gray = cv2.cvtColor(section_image, cv2.COLOR_BGR2GRAY)
@@ -272,10 +275,11 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
         (x, y, w, h) = cv2.boundingRect(c); ar = w / float(h)
         if 8 < w < 60 and 8 < h < 60 and 0.2 < ar < 5.0:
             bubble_contours.append(c)
-            cv2.rectangle(debug_section_image, (x, y + int(h_sec * 0.05)), (x + w, y + h + int(h_sec * 0.05)), (0, 255, 255), 2)
+            cv2.rectangle(debug_section_image, (x, y + y_crop_offset), (x + w, y + h + y_crop_offset), (0, 255, 255), 2)
     if not bubble_contours:
         logging.warning(f"MCQ Section {question_offset//15 + 1}: No contours found after filtering.")
         return [], 0
+        
     bubble_contours, _ = contours.sort_contours(bubble_contours, method="left-to-right")
     columns = []; current_column = [bubble_contours[0]]
     avg_bubble_width = np.mean([cv2.boundingRect(c)[2] for c in bubble_contours])
@@ -289,6 +293,7 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
             current_column.append(bubble_contours[i])
     columns.append(current_column)
     logging.info(f"MCQ Section {question_offset//15 + 1}: Clustered into {len(columns)} columns.")
+    
     if len(columns) == 5:
         bubble_columns = columns[1:]
         logging.info("  -> Found 5 columns, assuming first is question numbers. Discarding it.")
@@ -299,28 +304,36 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
         logging.error(f"MCQ Section {question_offset//15 + 1}: Expected 4 or 5 columns, found {len(columns)}.")
         cv2.imshow(f"FAILED Section {question_offset//15 + 1}", debug_section_image)
         return [], 0
+        
     all_bubbles_in_section = [c for col in bubble_columns for c in col]
     for c in all_bubbles_in_section:
         (x, y, w, h) = cv2.boundingRect(c)
-        cv2.rectangle(debug_section_image, (x, y + int(h_sec * 0.05)), (x + w, y + h + int(h_sec * 0.05)), (0, 255, 0), 2)
+        cv2.rectangle(debug_section_image, (x, y + y_crop_offset), (x + w, y + h + y_crop_offset), (0, 255, 0), 2)
     cv2.imshow(f"Debug Contours: Section {question_offset//15 + 1}", debug_section_image)
     section_answers = []; section_correct = 0
     
-    # IMPORTANT: Use original 'gray' image for grading
     all_bubble_intensities = [cv2.mean(gray, mask=cv2.drawContours(np.zeros(gray.shape, dtype="uint8"), [c], -1, 255, -1))[0] for c in all_bubbles_in_section]
     grading_threshold = get_intensity_threshold(all_bubble_intensities)
     logging.info(f"MCQ Section {question_offset//15 + 1} grading threshold: {grading_threshold:.2f}")
     question_rows = group_bubbles_into_rows(all_bubbles_in_section, tolerance=20)
+    
     for row_idx, row in enumerate(question_rows):
         question_num = question_offset + row_idx
+        
+        # --- NEW LOGIC: Smartly handle rows with extra contours ---
+        if len(row) > 4:
+            logging.warning(f"Q:{question_num+1} - Found {len(row)} bubbles, expected 4. Assuming first is noise and discarding.")
+            # Sort by x-coordinate and take the rightmost 4
+            row = contours.sort_contours(row, method="left-to-right")[0][-4:]
+        
         if len(row) != 4:
-            logging.warning(f"Q:{question_num+1} - Expected 4 bubbles, found {len(row)}. Skipping.")
+            logging.warning(f"Q:{question_num+1} - Still not 4 bubbles after cleanup ({len(row)} found). Skipping.")
             continue
+            
         question_bubbles = contours.sort_contours(row, method="left-to-right")[0]
         marked_choice_idx = -1; marked_count = 0
         for choice_idx, bubble_contour in enumerate(question_bubbles):
             mask = cv2.drawContours(np.zeros(gray.shape, dtype="uint8"), [bubble_contour], -1, 255, -1)
-            # Use original 'gray' for intensity check
             if cv2.mean(gray, mask=mask)[0] < grading_threshold:
                 marked_choice_idx = choice_idx; marked_count += 1
         is_correct = False
@@ -339,8 +352,10 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
             for answer_idx in answers_to_draw:
                 if answer_idx < len(question_bubbles):
                     (x_b, y_b, w_b, h_b) = cv2.boundingRect(question_bubbles[answer_idx])
-                    y_b_draw = y_b + int(h_sec * 0.05)
-                    cv2.rectangle(output_image, (x_b + section_x_offset, y_b_draw + section_y_offset), (x_b + w_b + section_x_offset, y_b_draw + h_b + section_y_offset), color, 3)
+                    # Adjust y-coordinate for the final drawing due to the header crop
+                    final_y = y_b + section_y_offset + y_crop_offset
+                    final_x = x_b + section_x_offset
+                    cv2.rectangle(output_image, (final_x, final_y), (final_x + w_b, final_y + h_b), color, 3)
     return section_answers, section_correct
 
 
@@ -446,6 +461,5 @@ def process_omr_sheet(image_path):
 if __name__ == "__main__":
     image_file = 'final_5.jpg' 
     process_omr_sheet(image_file)
-
 
 
