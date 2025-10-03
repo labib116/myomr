@@ -375,3 +375,444 @@ Correct Answers: 0 / 60
 Score: 0.00%
 2025-10-03 01:49:55,231 - WARNING - Invalid roll number 'EEEEE'. Saving results using image filename: bangla_omr_error_results.csv
 2025-10-03 01:49:55,231 - INFO - Writing results to bangla_omr_error_results.csv
+2025-10-03 19:02:46,310 - INFO - Final section split at y=497
+2025-10-03 19:02:46,322 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:02:46,324 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:02:46,369 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:02:46,415 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:02:46,432 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:02:46,432 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:02:46,433 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:02:46,433 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:10:26,909 - INFO - Final section split at y=497
+2025-10-03 19:10:26,913 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:10:26,913 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:10:26,927 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:10:26,942 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:10:26,947 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:10:26,947 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:10:26,947 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:10:26,947 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:13:30,412 - INFO - Final section split at y=497
+2025-10-03 19:13:30,416 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:13:30,416 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:13:30,431 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:13:30,450 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:13:30,471 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:13:30,472 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:13:30,472 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:13:30,472 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:13:43,024 - INFO - Final section split at y=497
+2025-10-03 19:13:43,027 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:13:43,028 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:13:43,045 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:13:43,060 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:13:43,092 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:13:43,092 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:13:43,092 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:13:43,092 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:15:53,886 - INFO - Final section split at y=497
+2025-10-03 19:15:53,890 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:15:53,891 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:15:53,906 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:15:53,923 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:15:53,954 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:15:53,955 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:15:53,955 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:15:53,955 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:28:07,984 - INFO - Final section split at y=497
+2025-10-03 19:28:07,987 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:28:07,988 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:28:08,004 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:28:08,021 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:28:08,055 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:28:08,056 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:28:08,056 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:28:08,056 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:32:40,239 - INFO - Final section split at y=497
+2025-10-03 19:32:40,242 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:32:40,243 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:32:40,259 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:32:40,276 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:32:40,308 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:32:40,308 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:32:40,308 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:32:40,308 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:36:20,652 - INFO - Final section split at y=497
+2025-10-03 19:36:20,656 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:36:20,657 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:36:20,674 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:36:20,700 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:36:20,725 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:36:20,725 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:36:20,725 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:36:20,726 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:40:10,752 - INFO - Final section split at y=497
+2025-10-03 19:40:10,756 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:40:10,756 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:40:10,771 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:40:10,787 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:40:10,809 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:40:10,809 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:40:10,809 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:40:10,810 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:44:10,426 - INFO - Final section split at y=497
+2025-10-03 19:44:10,430 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:44:10,431 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:44:10,458 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:44:10,473 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:44:10,508 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:44:10,508 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:44:10,508 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:44:10,509 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:48:05,428 - INFO - Final section split at y=497
+2025-10-03 19:48:05,433 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:48:05,434 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:48:05,449 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:48:05,466 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:48:05,492 - WARNING - Could not find 3 clear vertical separator lines. Found 0 candidates.
+2025-10-03 19:48:05,493 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:48:05,493 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:48:05,493 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:49:03,626 - INFO - Final section split at y=497
+2025-10-03 19:49:03,630 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:49:03,630 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:49:03,646 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:49:03,663 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:49:03,667 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:49:03,667 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:49:03,667 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:49:03,668 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:49:31,297 - INFO - Final section split at y=497
+2025-10-03 19:49:31,301 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:49:31,301 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:49:31,318 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:49:31,335 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:49:31,341 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates.
+2025-10-03 19:49:31,341 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:49:31,341 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:49:31,341 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:53:43,033 - INFO - Final section split at y=509
+2025-10-03 19:53:43,040 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:53:43,041 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:53:43,063 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:53:43,084 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:54:58,848 - INFO - Found 2 vertical separator clusters at x=[198, 398]
+2025-10-03 19:54:58,848 - WARNING - Could not find 3 clear vertical separator lines. Found 2 candidates which clustered into 2 groups.
+2025-10-03 19:54:58,849 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 19:54:58,849 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:54:58,849 - INFO - Writing results to 67890_results.csv
+2025-10-03 19:58:23,425 - INFO - Final section split at y=509
+2025-10-03 19:58:23,430 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 19:58:23,430 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 19:58:23,460 - INFO - Roll number grading threshold: 88.95
+2025-10-03 19:58:23,481 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 19:58:32,039 - INFO - Found 4 potential line contours. Analyzing each...
+2025-10-03 19:58:32,041 - INFO -   - Contour 0: height=423, width=5. (Height threshold is 334.50)
+2025-10-03 19:58:32,041 - INFO -     -> ACCEPTED. Appending x-coordinate 600.
+2025-10-03 19:58:32,042 - INFO -   - Contour 1: height=40, width=3. (Height threshold is 334.50)
+2025-10-03 19:58:32,042 - INFO -     -> REJECTED.
+2025-10-03 19:58:32,042 - INFO -   - Contour 2: height=465, width=5. (Height threshold is 334.50)
+2025-10-03 19:58:32,043 - INFO -     -> ACCEPTED. Appending x-coordinate 398.
+2025-10-03 19:58:32,043 - INFO -   - Contour 3: height=465, width=4. (Height threshold is 334.50)
+2025-10-03 19:58:32,043 - INFO -     -> ACCEPTED. Appending x-coordinate 198.
+2025-10-03 19:58:32,043 - INFO - Found 3 vertical separator clusters at x=[198, 398, 600]
+2025-10-03 19:58:32,044 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 19:58:32,093 - INFO - MCQ Section 1 grading threshold: 73.25
+2025-10-03 19:58:32,099 - WARNING - Q:3 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,099 - WARNING - Q:4 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,099 - WARNING - Q:5 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,100 - WARNING - Q:6 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,100 - WARNING - Q:7 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,100 - WARNING - Q:8 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,100 - WARNING - Q:9 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,101 - WARNING - Q:10 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,101 - WARNING - Q:11 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,103 - WARNING - Q:13 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,103 - WARNING - Q:14 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,103 - WARNING - Q:15 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,103 - WARNING - Q:16 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,142 - INFO - MCQ Section 2 grading threshold: 87.44
+2025-10-03 19:58:32,143 - WARNING - Q:16 - Expected 4 bubbles, found 3. Skipping.
+2025-10-03 19:58:32,146 - WARNING - Q:18 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,146 - WARNING - Q:19 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,146 - WARNING - Q:20 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,146 - WARNING - Q:21 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,146 - WARNING - Q:22 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,147 - WARNING - Q:23 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,147 - WARNING - Q:24 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,147 - WARNING - Q:25 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,147 - WARNING - Q:26 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,147 - WARNING - Q:27 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,147 - WARNING - Q:28 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,148 - WARNING - Q:29 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,148 - WARNING - Q:30 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,148 - WARNING - Q:31 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,183 - INFO - MCQ Section 3 grading threshold: 79.72
+2025-10-03 19:58:32,185 - WARNING - Q:32 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,185 - WARNING - Q:33 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,185 - WARNING - Q:34 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,185 - WARNING - Q:35 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,185 - WARNING - Q:36 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,185 - WARNING - Q:37 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,185 - WARNING - Q:38 - Expected 4 bubbles, found 6. Skipping.
+2025-10-03 19:58:32,185 - WARNING - Q:39 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,186 - WARNING - Q:40 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,186 - WARNING - Q:41 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,187 - WARNING - Q:43 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,187 - WARNING - Q:44 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,187 - WARNING - Q:45 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,187 - WARNING - Q:46 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,203 - INFO - MCQ Section 4 grading threshold: 77.31
+2025-10-03 19:58:32,204 - WARNING - Q:47 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,205 - WARNING - Q:48 - Expected 4 bubbles, found 6. Skipping.
+2025-10-03 19:58:32,205 - WARNING - Q:49 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,205 - WARNING - Q:50 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,205 - WARNING - Q:51 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:53 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:54 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:55 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:56 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:57 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:58 - Expected 4 bubbles, found 6. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:59 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:60 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - WARNING - Q:61 - Expected 4 bubbles, found 5. Skipping.
+2025-10-03 19:58:32,206 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 19:58:32,207 - INFO - Writing results to 67890_results.csv
+2025-10-03 20:15:47,739 - INFO - Final section split at y=509
+2025-10-03 20:15:47,742 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 20:15:47,743 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 20:15:47,760 - INFO - Roll number grading threshold: 88.95
+2025-10-03 20:15:47,778 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 20:15:47,782 - INFO - Found 4 potential line contours. Analyzing each...
+2025-10-03 20:15:47,782 - INFO -   - Contour 0: height=423, width=5. (Height threshold is 334.50)
+2025-10-03 20:15:47,783 - INFO -     -> ACCEPTED. Appending x-coordinate 600.
+2025-10-03 20:15:47,783 - INFO -   - Contour 1: height=40, width=3. (Height threshold is 334.50)
+2025-10-03 20:15:47,783 - INFO -     -> REJECTED.
+2025-10-03 20:15:47,783 - INFO -   - Contour 2: height=465, width=5. (Height threshold is 334.50)
+2025-10-03 20:15:47,783 - INFO -     -> ACCEPTED. Appending x-coordinate 398.
+2025-10-03 20:15:47,783 - INFO -   - Contour 3: height=465, width=4. (Height threshold is 334.50)
+2025-10-03 20:15:47,783 - INFO -     -> ACCEPTED. Appending x-coordinate 198.
+2025-10-03 20:15:47,783 - INFO - Found 3 vertical separator clusters at x=[198, 398, 600]
+2025-10-03 20:15:47,784 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 20:15:47,786 - INFO - MCQ Section 1: Clustered into 2 columns.
+2025-10-03 20:15:47,786 - ERROR - MCQ Section 1: Expected 4 or 5 columns, found 2.
+2025-10-03 20:15:47,788 - INFO - MCQ Section 2: Clustered into 2 columns.
+2025-10-03 20:15:47,788 - ERROR - MCQ Section 2: Expected 4 or 5 columns, found 2.
+2025-10-03 20:15:47,791 - INFO - MCQ Section 3: Clustered into 2 columns.
+2025-10-03 20:15:47,791 - ERROR - MCQ Section 3: Expected 4 or 5 columns, found 2.
+2025-10-03 20:15:47,793 - INFO - MCQ Section 4: Clustered into 2 columns.
+2025-10-03 20:15:47,793 - ERROR - MCQ Section 4: Expected 4 or 5 columns, found 2.
+2025-10-03 20:15:47,793 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:15:47,793 - INFO - Writing results to 67890_results.csv
+2025-10-03 20:19:06,294 - INFO - Final section split at y=509
+2025-10-03 20:19:06,298 - INFO - Found 50 potential bubble contours in roll number section.
+2025-10-03 20:19:06,299 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-03 20:19:06,329 - INFO - Roll number grading threshold: 88.95
+2025-10-03 20:19:06,344 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 20:19:06,347 - INFO - Found 4 potential line contours. Analyzing each...
+2025-10-03 20:19:06,347 - INFO -   - Contour 0: height=423, width=5. (Height threshold is 334.50)
+2025-10-03 20:19:06,347 - INFO -     -> ACCEPTED. Appending x-coordinate 600.
+2025-10-03 20:19:06,347 - INFO -   - Contour 1: height=40, width=3. (Height threshold is 334.50)
+2025-10-03 20:19:06,348 - INFO -     -> REJECTED.
+2025-10-03 20:19:06,348 - INFO -   - Contour 2: height=465, width=5. (Height threshold is 334.50)
+2025-10-03 20:19:06,348 - INFO -     -> ACCEPTED. Appending x-coordinate 398.
+2025-10-03 20:19:06,348 - INFO -   - Contour 3: height=465, width=4. (Height threshold is 334.50)
+2025-10-03 20:19:06,348 - INFO -     -> ACCEPTED. Appending x-coordinate 198.
+2025-10-03 20:19:06,348 - INFO - Found 3 vertical separator clusters at x=[198, 398, 600]
+2025-10-03 20:19:06,348 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 20:19:06,468 - INFO - MCQ Section 1: Clustered into 5 columns.
+2025-10-03 20:19:06,468 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:06,505 - INFO - MCQ Section 1 grading threshold: 96.56
+2025-10-03 20:19:06,524 - INFO - MCQ Section 2: Clustered into 5 columns.
+2025-10-03 20:19:06,524 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:06,567 - INFO - MCQ Section 2 grading threshold: 108.18
+2025-10-03 20:19:06,583 - INFO - MCQ Section 3: Clustered into 5 columns.
+2025-10-03 20:19:06,583 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:06,629 - INFO - MCQ Section 3 grading threshold: 100.77
+2025-10-03 20:19:06,651 - INFO - MCQ Section 4: Clustered into 5 columns.
+2025-10-03 20:19:06,651 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:06,694 - INFO - MCQ Section 4 grading threshold: 95.88
+2025-10-03 20:19:06,708 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 11.67%
+2025-10-03 20:19:06,708 - INFO - Writing results to 67890_results.csv
+2025-10-03 20:19:55,370 - INFO - Final section split at y=630
+2025-10-03 20:19:55,374 - INFO - Found 55 potential bubble contours in roll number section.
+2025-10-03 20:19:55,375 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-03 20:19:55,398 - INFO - Roll number grading threshold: 68.42
+2025-10-03 20:19:55,419 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 20:19:55,424 - INFO - Found 3 potential line contours. Analyzing each...
+2025-10-03 20:19:55,424 - INFO -   - Contour 0: height=575, width=6. (Height threshold is 414.00)
+2025-10-03 20:19:55,424 - INFO -     -> ACCEPTED. Appending x-coordinate 736.
+2025-10-03 20:19:55,424 - INFO -   - Contour 1: height=575, width=6. (Height threshold is 414.00)
+2025-10-03 20:19:55,424 - INFO -     -> ACCEPTED. Appending x-coordinate 488.
+2025-10-03 20:19:55,424 - INFO -   - Contour 2: height=576, width=4. (Height threshold is 414.00)
+2025-10-03 20:19:55,424 - INFO -     -> ACCEPTED. Appending x-coordinate 243.
+2025-10-03 20:19:55,425 - INFO - Found 3 vertical separator clusters at x=[243, 488, 736]
+2025-10-03 20:19:55,425 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 20:19:55,509 - INFO - MCQ Section 1: Clustered into 5 columns.
+2025-10-03 20:19:55,509 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:55,555 - INFO - MCQ Section 1 grading threshold: 93.61
+2025-10-03 20:19:55,574 - INFO - MCQ Section 2: Clustered into 5 columns.
+2025-10-03 20:19:55,574 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:55,620 - INFO - MCQ Section 2 grading threshold: 104.34
+2025-10-03 20:19:55,638 - INFO - MCQ Section 3: Clustered into 5 columns.
+2025-10-03 20:19:55,638 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:55,680 - INFO - MCQ Section 3 grading threshold: 98.24
+2025-10-03 20:19:55,697 - INFO - MCQ Section 4: Clustered into 5 columns.
+2025-10-03 20:19:55,697 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:19:55,738 - INFO - MCQ Section 4 grading threshold: 94.10
+2025-10-03 20:19:55,751 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 11.67%
+2025-10-03 20:19:55,752 - INFO - Writing results to 67890_results.csv
+2025-10-03 20:20:41,028 - INFO - Final section split at y=627
+2025-10-03 20:20:41,033 - INFO - Found 57 potential bubble contours in roll number section.
+2025-10-03 20:20:41,034 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-03 20:20:41,059 - INFO - Roll number grading threshold: 61.58
+2025-10-03 20:20:41,083 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 20:20:41,089 - INFO - Found 5 potential line contours. Analyzing each...
+2025-10-03 20:20:41,089 - INFO -   - Contour 0: height=521, width=6. (Height threshold is 411.50)
+2025-10-03 20:20:41,089 - INFO -     -> ACCEPTED. Appending x-coordinate 734.
+2025-10-03 20:20:41,089 - INFO -   - Contour 1: height=520, width=6. (Height threshold is 411.50)
+2025-10-03 20:20:41,089 - INFO -     -> ACCEPTED. Appending x-coordinate 487.
+2025-10-03 20:20:41,089 - INFO -   - Contour 2: height=49, width=4. (Height threshold is 411.50)
+2025-10-03 20:20:41,089 - INFO -     -> REJECTED.
+2025-10-03 20:20:41,090 - INFO -   - Contour 3: height=51, width=3. (Height threshold is 411.50)
+2025-10-03 20:20:41,090 - INFO -     -> REJECTED.
+2025-10-03 20:20:41,090 - INFO -   - Contour 4: height=574, width=6. (Height threshold is 411.50)
+2025-10-03 20:20:41,090 - INFO -     -> ACCEPTED. Appending x-coordinate 242.
+2025-10-03 20:20:41,090 - INFO - Found 3 vertical separator clusters at x=[242, 487, 734]
+2025-10-03 20:20:41,090 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 20:20:41,200 - INFO - MCQ Section 1: Clustered into 5 columns.
+2025-10-03 20:20:41,200 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:20:41,251 - INFO - MCQ Section 1 grading threshold: 92.70
+2025-10-03 20:20:41,275 - INFO - MCQ Section 2: Clustered into 5 columns.
+2025-10-03 20:20:41,275 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:20:41,332 - INFO - MCQ Section 2 grading threshold: 103.34
+2025-10-03 20:20:41,351 - INFO - MCQ Section 3: Clustered into 5 columns.
+2025-10-03 20:20:41,351 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:20:41,393 - INFO - MCQ Section 3 grading threshold: 96.33
+2025-10-03 20:20:41,415 - INFO - MCQ Section 4: Clustered into 5 columns.
+2025-10-03 20:20:41,415 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:20:41,454 - INFO - MCQ Section 4 grading threshold: 93.82
+2025-10-03 20:20:41,472 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 11.67%
+2025-10-03 20:20:41,472 - INFO - Writing results to 67890_results.csv
+2025-10-03 20:21:11,461 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:21:11,463 - INFO - Final section split at y=379
+2025-10-03 20:21:11,465 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:21:11,465 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:21:11,475 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 20:21:11,475 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 20:21:11,475 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 20:21:11,475 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:21:11,475 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 20:21:11,476 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 20:22:18,075 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:22:18,076 - INFO - Final section split at y=379
+2025-10-03 20:22:18,079 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:22:18,080 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:22:18,089 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 20:22:18,090 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 20:22:18,090 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 20:22:18,090 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:22:18,090 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 20:22:18,090 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 20:24:07,251 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:24:07,252 - INFO - Final section split at y=379
+2025-10-03 20:24:07,254 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:24:07,254 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:24:07,262 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 20:24:07,262 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 20:24:07,262 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 20:24:07,263 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:24:07,263 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 20:24:07,263 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 20:26:44,864 - WARNING - Could not find horizontal separator. Falling back to 22% split.
+2025-10-03 20:26:44,865 - INFO - Final section split at y=379
+2025-10-03 20:26:44,934 - INFO - Found 0 potential bubble contours in roll number section.
+2025-10-03 20:26:44,934 - INFO - --- Decoded Roll Number: Not Enough Bubbles Found ---
+2025-10-03 20:26:44,944 - INFO - Found 0 potential line contours. Analyzing each...
+2025-10-03 20:26:44,944 - WARNING - Could not find 3 clear vertical separator lines. Found 0 accepted candidates which clustered into 0 groups.
+2025-10-03 20:26:44,945 - ERROR - Failed to split MCQ section by vertical lines. Grading aborted.
+2025-10-03 20:26:44,945 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-03 20:26:44,946 - WARNING - Invalid roll number 'Not Enough Bubbles Found'. Saving results using image filename: final_4_error_results.csv
+2025-10-03 20:26:44,946 - INFO - Writing results to final_4_error_results.csv
+2025-10-03 20:27:18,327 - INFO - Final section split at y=627
+2025-10-03 20:27:18,365 - INFO - Found 57 potential bubble contours in roll number section.
+2025-10-03 20:27:18,366 - INFO - Clustered roll number bubbles into 6 columns.
+2025-10-03 20:27:18,409 - INFO - Roll number grading threshold: 61.58
+2025-10-03 20:27:18,439 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-03 20:27:18,446 - INFO - Found 5 potential line contours. Analyzing each...
+2025-10-03 20:27:18,446 - INFO -   - Contour 0: height=521, width=6. (Height threshold is 411.50)
+2025-10-03 20:27:18,446 - INFO -     -> ACCEPTED. Appending x-coordinate 734.
+2025-10-03 20:27:18,447 - INFO -   - Contour 1: height=520, width=6. (Height threshold is 411.50)
+2025-10-03 20:27:18,447 - INFO -     -> ACCEPTED. Appending x-coordinate 487.
+2025-10-03 20:27:18,447 - INFO -   - Contour 2: height=49, width=4. (Height threshold is 411.50)
+2025-10-03 20:27:18,447 - INFO -     -> REJECTED.
+2025-10-03 20:27:18,447 - INFO -   - Contour 3: height=51, width=3. (Height threshold is 411.50)
+2025-10-03 20:27:18,447 - INFO -     -> REJECTED.
+2025-10-03 20:27:18,447 - INFO -   - Contour 4: height=574, width=6. (Height threshold is 411.50)
+2025-10-03 20:27:18,447 - INFO -     -> ACCEPTED. Appending x-coordinate 242.
+2025-10-03 20:27:18,447 - INFO - Found 3 vertical separator clusters at x=[242, 487, 734]
+2025-10-03 20:27:18,447 - INFO - Successfully identified 3+ separators. Using the first three.
+2025-10-03 20:27:18,553 - INFO - MCQ Section 1: Clustered into 5 columns.
+2025-10-03 20:27:18,554 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:27:18,605 - INFO - MCQ Section 1 grading threshold: 92.70
+2025-10-03 20:27:18,631 - INFO - MCQ Section 2: Clustered into 5 columns.
+2025-10-03 20:27:18,632 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:27:18,705 - INFO - MCQ Section 2 grading threshold: 103.34
+2025-10-03 20:27:18,728 - INFO - MCQ Section 3: Clustered into 5 columns.
+2025-10-03 20:27:18,728 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:27:18,795 - INFO - MCQ Section 3 grading threshold: 96.33
+2025-10-03 20:27:18,850 - INFO - MCQ Section 4: Clustered into 5 columns.
+2025-10-03 20:27:18,851 - INFO -   -> Found 5 columns, assuming first is question numbers. Discarding it.
+2025-10-03 20:27:18,975 - INFO - MCQ Section 4 grading threshold: 93.82
+2025-10-03 20:27:19,015 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 11.67%
+2025-10-03 20:27:19,016 - INFO - Writing results to 67890_results.csv
