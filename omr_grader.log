@@ -2876,3 +2876,1457 @@ Score: 6.67%
 Correct Answers: 7 / 60
 Score: 11.67%
 2025-10-04 02:02:57,357 - INFO - Results written to 45457_results.csv
+2025-10-05 17:50:22,674 - INFO - Found 312 potential fiducial markers.
+2025-10-05 17:50:22,798 - INFO - Found horizontal separator at y=794
+2025-10-05 17:50:23,058 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 17:50:23,060 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 17:50:23,184 - INFO - Roll number grading threshold: 90.08
+2025-10-05 17:50:23,258 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 17:50:23,289 - INFO - Found vertical separators at x=[301, 612, 925]
+2025-10-05 17:50:23,350 - INFO - MCQ Section 1: Found 81 bubbles.
+2025-10-05 17:50:23,364 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,366 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,367 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,369 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,371 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,373 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,405 - INFO - MCQ Section 2: Found 82 bubbles.
+2025-10-05 17:50:23,419 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,422 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,427 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,428 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,430 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,431 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,433 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,472 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 17:50:23,473 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,474 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,476 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,478 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,480 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,482 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,486 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,487 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,490 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,492 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,494 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,497 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,499 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,500 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,547 - INFO - MCQ Section 4: Found 90 bubbles.
+2025-10-05 17:50:23,547 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,550 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,551 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,553 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,555 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,558 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,560 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,561 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,563 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,566 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,567 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,569 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,571 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,574 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,575 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 17:50:23,577 - INFO - --- OMR Grading Results ---
+Correct Answers: 5 / 60
+Score: 5.00%
+2025-10-05 17:50:23,578 - INFO - Results written to 23450_results.csv
+2025-10-05 17:52:13,835 - INFO - Found 295 potential fiducial markers.
+2025-10-05 17:52:13,854 - INFO - Found horizontal separator at y=433
+2025-10-05 17:52:13,912 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 17:52:13,913 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 17:52:13,927 - INFO - Roll number grading threshold: 101.67
+2025-10-05 17:52:13,937 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 17:52:13,944 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 17:52:13,971 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 17:52:14,012 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 17:52:14,058 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 17:52:14,104 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 17:52:14,114 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00%
+2025-10-05 17:52:14,115 - INFO - Results written to 45678_results.csv
+2025-10-05 17:59:39,163 - INFO - Found 295 potential fiducial markers.
+2025-10-05 17:59:39,181 - INFO - Found horizontal separator at y=433
+2025-10-05 17:59:39,241 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 17:59:39,242 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 17:59:39,260 - INFO - Roll number grading threshold: 101.67
+2025-10-05 17:59:39,278 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 17:59:39,284 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 17:59:39,329 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 17:59:39,370 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 17:59:39,422 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 17:59:39,473 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 17:59:39,483 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00%
+2025-10-05 17:59:39,483 - INFO - Results written to 45678_results.csv
+2025-10-05 18:05:00,300 - INFO - Found 295 potential fiducial markers.
+2025-10-05 18:05:00,318 - INFO - Found horizontal separator at y=433
+2025-10-05 18:05:00,376 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 18:05:00,377 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 18:05:00,388 - INFO - Roll number grading threshold: 101.67
+2025-10-05 18:05:00,401 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 18:05:00,407 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 18:05:00,436 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 18:05:00,493 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 18:05:00,533 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 18:05:00,590 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 18:05:00,597 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-05 18:05:00,598 - INFO - Results written to 45678_results.csv
+2025-10-05 18:12:08,666 - INFO - Found 295 potential fiducial markers.
+2025-10-05 18:12:08,684 - INFO - Found horizontal separator at y=433
+2025-10-05 18:12:08,744 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 18:12:08,745 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 18:12:08,762 - INFO - Roll number grading threshold: 101.67
+2025-10-05 18:12:08,783 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 18:12:08,789 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 18:12:08,820 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 18:12:08,820 - INFO - Section 1: Paper peak=254, Mark threshold=203
+2025-10-05 18:12:08,873 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 18:12:08,873 - INFO - Section 2: Paper peak=254, Mark threshold=203
+2025-10-05 18:12:08,915 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 18:12:08,915 - INFO - Section 3: Paper peak=254, Mark threshold=203
+2025-10-05 18:12:08,958 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 18:12:08,959 - INFO - Section 4: Paper peak=254, Mark threshold=203
+2025-10-05 18:12:08,966 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-05 18:12:08,967 - INFO - Results written to 45678_results.csv
+2025-10-05 18:18:25,859 - INFO - Found 295 potential fiducial markers.
+2025-10-05 18:18:25,867 - INFO - --- Decoded Roll Number: 12345 ---
+2025-10-05 18:18:26,006 - INFO - Global Dynamic Intensity Threshold calculated: 125.90
+2025-10-05 18:18:26,009 - WARNING - Q:2 - Found 2 bubbles instead of 4. Skipping.
+2025-10-05 18:18:26,047 - INFO - --- OMR Grading Results ---
+Correct Answers: 12 / 60
+Score: 20.00%
+2025-10-05 18:26:05,240 - INFO - Found 295 potential fiducial markers.
+2025-10-05 18:26:05,294 - INFO - --- Decoded Roll Number: Not Enough Bubbles (11) ---
+2025-10-05 18:26:05,305 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 18:26:05,416 - WARNING - Q:17 - Found only 2 bubbles. Skipping.
+2025-10-05 18:26:05,485 - WARNING - Q:31 - Found only 1 bubbles. Skipping.
+2025-10-05 18:26:05,485 - WARNING - Q:32 - Found only 1 bubbles. Skipping.
+2025-10-05 18:26:05,485 - WARNING - Q:33 - Found only 1 bubbles. Skipping.
+2025-10-05 18:26:05,485 - WARNING - Q:34 - Found only 1 bubbles. Skipping.
+2025-10-05 18:26:05,485 - WARNING - Q:35 - Found only 1 bubbles. Skipping.
+2025-10-05 18:26:05,485 - WARNING - Q:36 - Found only 1 bubbles. Skipping.
+2025-10-05 18:26:05,597 - INFO - --- OMR Grading Results ---
+Correct Answers: 20 / 60
+Score: 20.00
+2025-10-05 18:26:05,598 - INFO - Results written to final_17_results.csv
+2025-10-05 18:27:07,133 - INFO - Found 295 potential fiducial markers.
+2025-10-05 18:27:07,154 - INFO - Found horizontal separator at y=433
+2025-10-05 18:27:07,216 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 18:27:07,217 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 18:27:07,233 - INFO - Roll number grading threshold: 101.67
+2025-10-05 18:27:07,254 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 18:27:07,260 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 18:27:07,290 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 18:27:07,347 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 18:27:07,396 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 18:27:07,445 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 18:27:07,462 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00%
+2025-10-05 18:27:07,462 - INFO - Results written to 45678_results.csv
+2025-10-05 18:43:31,121 - INFO - Found 295 potential fiducial markers.
+2025-10-05 18:43:31,139 - INFO - Found horizontal separator at y=433
+2025-10-05 18:43:31,199 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 18:43:31,199 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 18:43:31,212 - INFO - Roll number grading threshold: 101.67
+2025-10-05 18:43:31,223 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 18:43:31,229 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 18:43:31,258 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 18:43:31,302 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 18:43:31,352 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 18:43:31,407 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 18:43:31,422 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00
+2025-10-05 18:43:31,423 - INFO - Results written to 45678_results.csv
+2025-10-05 18:44:59,381 - INFO - Found 295 potential fiducial markers.
+2025-10-05 18:44:59,401 - INFO - Found horizontal separator at y=443
+2025-10-05 18:44:59,463 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 18:44:59,464 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 18:44:59,479 - INFO - Roll number grading threshold: 92.97
+2025-10-05 18:44:59,491 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 18:44:59,498 - INFO - Found vertical separators at x=[173, 349, 527]
+2025-10-05 18:44:59,535 - INFO - MCQ Section 1: Found 66 bubbles.
+2025-10-05 18:44:59,584 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 18:44:59,635 - INFO - MCQ Section 3: Found 64 bubbles.
+2025-10-05 18:44:59,675 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 18:44:59,684 - INFO - --- OMR Grading Results ---
+Correct Answers: 11 / 60
+Score: 11.00
+2025-10-05 18:44:59,685 - INFO - Results written to 45678_results.csv
+2025-10-05 19:01:35,367 - INFO - Found 295 potential fiducial markers.
+2025-10-05 19:01:35,386 - INFO - Found horizontal separator at y=433
+2025-10-05 19:01:35,446 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:01:35,447 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:01:35,460 - INFO - Roll number grading threshold: 101.67
+2025-10-05 19:01:35,471 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:01:35,478 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 19:01:35,522 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 19:01:35,566 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 19:01:35,613 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 19:01:35,684 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 19:01:35,697 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00
+2025-10-05 19:01:35,698 - INFO - Results written to 45678_results.csv
+2025-10-05 19:05:19,495 - INFO - Found 295 potential fiducial markers.
+2025-10-05 19:05:19,514 - INFO - Found horizontal separator at y=443
+2025-10-05 19:05:19,576 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:05:19,577 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:05:19,591 - INFO - Roll number grading threshold: 92.97
+2025-10-05 19:05:19,602 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:05:19,610 - INFO - Found vertical separators at x=[173, 349, 527]
+2025-10-05 19:05:19,649 - INFO - MCQ Section 1: Found 66 bubbles.
+2025-10-05 19:05:19,703 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 19:05:19,762 - INFO - MCQ Section 3: Found 64 bubbles.
+2025-10-05 19:05:19,824 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 19:05:19,833 - INFO - --- OMR Grading Results ---
+Correct Answers: 11 / 60
+Score: 11.00
+2025-10-05 19:05:19,834 - INFO - Results written to 45678_results.csv
+2025-10-05 19:08:54,455 - INFO - Found 312 potential fiducial markers.
+2025-10-05 19:08:54,498 - INFO - Found horizontal separator at y=794
+2025-10-05 19:08:54,557 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:08:54,558 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:08:54,604 - INFO - Roll number grading threshold: 90.08
+2025-10-05 19:08:54,639 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:08:54,658 - INFO - Found vertical separators at x=[301, 612, 925]
+2025-10-05 19:08:54,713 - INFO - MCQ Section 1: Found 81 bubbles.
+2025-10-05 19:08:54,729 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,730 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,732 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,733 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,735 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,736 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,769 - INFO - MCQ Section 2: Found 82 bubbles.
+2025-10-05 19:08:54,779 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,780 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,785 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,788 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,790 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,792 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,794 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,828 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 19:08:54,829 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,830 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,832 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,834 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,836 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,837 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,839 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,841 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,843 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,845 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,847 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,850 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,852 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,854 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,894 - INFO - MCQ Section 4: Found 90 bubbles.
+2025-10-05 19:08:54,894 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,898 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,899 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,901 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,903 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,906 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,907 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,909 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,913 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,915 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,916 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,919 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,920 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,922 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,925 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:08:54,927 - INFO - --- OMR Grading Results ---
+Correct Answers: 6 / 60
+Score: 6.00%
+2025-10-05 19:08:54,928 - INFO - Results written to 23450_results.csv
+2025-10-05 19:09:19,678 - INFO - Found 295 potential fiducial markers.
+2025-10-05 19:09:19,696 - INFO - Found horizontal separator at y=433
+2025-10-05 19:09:19,752 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:09:19,753 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:09:19,766 - INFO - Roll number grading threshold: 101.67
+2025-10-05 19:09:19,777 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:09:19,783 - INFO - Found vertical separators at x=[168, 339, 513]
+2025-10-05 19:09:19,810 - INFO - MCQ Section 1: Found 62 bubbles.
+2025-10-05 19:09:19,868 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 19:09:19,910 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 19:09:19,958 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 19:09:19,973 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00%
+2025-10-05 19:09:19,973 - INFO - Results written to 45678_results.csv
+2025-10-05 19:10:04,967 - INFO - Found 295 potential fiducial markers.
+2025-10-05 19:10:04,985 - INFO - Found horizontal separator at y=443
+2025-10-05 19:10:05,043 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:10:05,044 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:10:05,060 - INFO - Roll number grading threshold: 92.97
+2025-10-05 19:10:05,071 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:10:05,078 - INFO - Found vertical separators at x=[173, 349, 527]
+2025-10-05 19:10:05,109 - INFO - MCQ Section 1: Found 66 bubbles.
+2025-10-05 19:10:05,151 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 19:10:05,208 - INFO - MCQ Section 3: Found 64 bubbles.
+2025-10-05 19:10:05,257 - INFO - MCQ Section 4: Found 62 bubbles.
+2025-10-05 19:10:05,268 - INFO - --- OMR Grading Results ---
+Correct Answers: 11 / 60
+Score: 11.00%
+2025-10-05 19:10:05,268 - INFO - Results written to 45678_results.csv
+2025-10-05 19:10:46,187 - INFO - Found 303 potential fiducial markers.
+2025-10-05 19:10:46,217 - INFO - Found horizontal separator at y=622
+2025-10-05 19:10:46,268 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:10:46,268 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:10:46,292 - INFO - Roll number grading threshold: 97.49
+2025-10-05 19:10:46,312 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:10:46,324 - INFO - Found vertical separators at x=[241, 486, 736]
+2025-10-05 19:10:46,361 - INFO - MCQ Section 1: Found 73 bubbles.
+2025-10-05 19:10:46,432 - INFO - MCQ Section 2: Found 79 bubbles.
+2025-10-05 19:10:46,441 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,443 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,445 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,448 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,494 - INFO - MCQ Section 3: Found 85 bubbles.
+2025-10-05 19:10:46,496 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,497 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,501 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,503 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,505 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,508 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,510 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,516 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,517 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,518 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,571 - INFO - MCQ Section 4: Found 87 bubbles.
+2025-10-05 19:10:46,571 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,574 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,575 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,576 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,578 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,579 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,580 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,581 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,582 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,583 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,584 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,585 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,586 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:10:46,587 - INFO - --- OMR Grading Results ---
+Correct Answers: 11 / 60
+Score: 11.00%
+2025-10-05 19:10:46,587 - INFO - Results written to 45678_results.csv
+2025-10-05 19:11:25,285 - INFO - Found 295 potential fiducial markers.
+2025-10-05 19:11:25,304 - INFO - Found horizontal separator at y=413
+2025-10-05 19:11:25,357 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:11:25,358 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:11:25,371 - INFO - Roll number grading threshold: 99.99
+2025-10-05 19:11:25,381 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:11:25,387 - INFO - Found vertical separators at x=[160, 322, 487]
+2025-10-05 19:11:25,419 - INFO - MCQ Section 1: Found 64 bubbles.
+2025-10-05 19:11:25,457 - INFO - MCQ Section 2: Found 64 bubbles.
+2025-10-05 19:11:25,503 - INFO - MCQ Section 3: Found 65 bubbles.
+2025-10-05 19:11:25,546 - INFO - MCQ Section 4: Found 61 bubbles.
+2025-10-05 19:11:25,555 - INFO - --- OMR Grading Results ---
+Correct Answers: 11 / 60
+Score: 11.00%
+2025-10-05 19:11:25,555 - INFO - Results written to 45678_results.csv
+2025-10-05 19:13:41,913 - INFO - Found 307 potential fiducial markers.
+2025-10-05 19:13:41,942 - INFO - Found horizontal separator at y=617
+2025-10-05 19:13:41,992 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:13:41,993 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:13:42,017 - INFO - Roll number grading threshold: 93.26
+2025-10-05 19:13:42,036 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:13:42,047 - INFO - Found vertical separators at x=[227, 461, 697]
+2025-10-05 19:13:42,093 - INFO - MCQ Section 1: Found 71 bubbles.
+2025-10-05 19:13:42,155 - INFO - MCQ Section 2: Found 78 bubbles.
+2025-10-05 19:13:42,161 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,163 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,166 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,167 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,169 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,219 - INFO - MCQ Section 3: Found 79 bubbles.
+2025-10-05 19:13:42,226 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,227 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,229 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,230 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,232 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,289 - INFO - MCQ Section 4: Found 85 bubbles.
+2025-10-05 19:13:42,291 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,292 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,293 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,294 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,297 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,300 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,302 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,304 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,305 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,306 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,307 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:13:42,309 - INFO - --- OMR Grading Results ---
+Correct Answers: 16 / 60
+Score: 16.00%
+2025-10-05 19:13:42,310 - INFO - Results written to 23450_results.csv
+2025-10-05 19:16:20,656 - INFO - Found 308 potential fiducial markers.
+2025-10-05 19:16:20,747 - INFO - Roll Number: Found 0 bubbles after filtering.
+2025-10-05 19:16:20,747 - INFO - --- Decoded Roll Number: Not Enough Bubbles (0) ---
+2025-10-05 19:16:20,767 - ERROR - Failed to find 3 clear vertical separators. Found 0. Grading aborted.
+2025-10-05 19:16:20,768 - INFO - --- OMR Grading Results ---
+Correct Answers: 0 / 60
+Score: 0.00%
+2025-10-05 19:16:20,768 - INFO - Results written to final_22_results.csv
+2025-10-05 19:17:11,571 - INFO - Found 306 potential fiducial markers.
+2025-10-05 19:17:11,602 - INFO - Found horizontal separator at y=617
+2025-10-05 19:17:11,654 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:17:11,655 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:17:11,684 - INFO - Roll number grading threshold: 100.45
+2025-10-05 19:17:11,716 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:17:11,730 - INFO - Found vertical separators at x=[239, 482, 728]
+2025-10-05 19:17:11,777 - INFO - MCQ Section 1: Found 73 bubbles.
+2025-10-05 19:17:11,854 - INFO - MCQ Section 2: Found 82 bubbles.
+2025-10-05 19:17:11,861 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,863 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,864 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,866 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,870 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,873 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,877 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,933 - INFO - MCQ Section 3: Found 86 bubbles.
+2025-10-05 19:17:11,935 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,937 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,939 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,941 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,943 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,945 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,947 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,950 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,952 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,954 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:11,955 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,013 - INFO - MCQ Section 4: Found 86 bubbles.
+2025-10-05 19:17:12,014 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,015 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,016 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,018 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,020 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,024 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,025 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,027 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,028 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,030 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,031 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:17:12,032 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00%
+2025-10-05 19:17:12,033 - INFO - Results written to 45678_results.csv
+2025-10-05 19:18:07,670 - INFO - Found 307 potential fiducial markers.
+2025-10-05 19:18:07,701 - INFO - Found horizontal separator at y=616
+2025-10-05 19:18:07,756 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:18:07,757 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:18:07,781 - INFO - Roll number grading threshold: 94.49
+2025-10-05 19:18:07,809 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:18:07,822 - INFO - Found vertical separators at x=[232, 471, 712]
+2025-10-05 19:18:07,874 - INFO - MCQ Section 1: Found 73 bubbles.
+2025-10-05 19:18:07,945 - INFO - MCQ Section 2: Found 78 bubbles.
+2025-10-05 19:18:07,952 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:07,954 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:07,957 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,034 - INFO - MCQ Section 3: Found 84 bubbles.
+2025-10-05 19:18:08,037 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,039 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,041 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,042 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,043 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,044 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,046 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,048 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,050 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,054 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,106 - INFO - MCQ Section 4: Found 85 bubbles.
+2025-10-05 19:18:08,109 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,110 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,113 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,116 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,117 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,118 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,120 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,121 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,123 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,125 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:08,127 - INFO - --- OMR Grading Results ---
+Correct Answers: 16 / 60
+Score: 16.00%
+2025-10-05 19:18:08,128 - INFO - Results written to 23450_results.csv
+2025-10-05 19:18:25,934 - INFO - Found 306 potential fiducial markers.
+2025-10-05 19:18:25,966 - INFO - Found horizontal separator at y=617
+2025-10-05 19:18:26,021 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:18:26,022 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:18:26,058 - INFO - Roll number grading threshold: 100.45
+2025-10-05 19:18:26,078 - INFO - --- Decoded Roll Number: 45678 ---
+2025-10-05 19:18:26,089 - INFO - Found vertical separators at x=[239, 482, 728]
+2025-10-05 19:18:26,149 - INFO - MCQ Section 1: Found 73 bubbles.
+2025-10-05 19:18:26,214 - INFO - MCQ Section 2: Found 82 bubbles.
+2025-10-05 19:18:26,219 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,221 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,222 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,223 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,225 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,227 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,231 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,287 - INFO - MCQ Section 3: Found 86 bubbles.
+2025-10-05 19:18:26,289 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,290 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,293 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,294 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,295 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,296 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,297 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,298 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,301 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,302 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,303 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,351 - INFO - MCQ Section 4: Found 86 bubbles.
+2025-10-05 19:18:26,352 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,354 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,356 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,358 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,360 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,364 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,366 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,368 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,370 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,374 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,376 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:18:26,378 - INFO - --- OMR Grading Results ---
+Correct Answers: 13 / 60
+Score: 13.00%
+2025-10-05 19:18:26,379 - INFO - Results written to 45678_results.csv
+2025-10-05 19:26:04,612 - INFO - Found 312 potential fiducial markers.
+2025-10-05 19:26:04,658 - INFO - Found horizontal separator at y=916
+2025-10-05 19:26:04,715 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:26:04,716 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:26:04,762 - INFO - Roll number grading threshold: 88.60
+2025-10-05 19:26:04,799 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:26:04,818 - INFO - Found vertical separators at x=[351, 709, 1071]
+2025-10-05 19:26:04,887 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:26:04,902 - WARNING - Q:5 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,916 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,919 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,922 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,923 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,926 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,930 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,966 - INFO - MCQ Section 2: Found 86 bubbles.
+2025-10-05 19:26:04,969 - WARNING - Q:17 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,972 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,975 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,982 - WARNING - Q:21 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,985 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,987 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,991 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,995 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,997 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:04,999 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,002 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,048 - INFO - MCQ Section 3: Found 90 bubbles.
+2025-10-05 19:26:05,048 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,050 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,053 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,055 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,057 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,059 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,061 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,063 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,065 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,069 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,073 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,076 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,079 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,082 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,086 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,128 - INFO - MCQ Section 4: Found 92 bubbles.
+2025-10-05 19:26:05,129 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,131 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,134 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,136 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,138 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,140 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,142 - WARNING - Q:52 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,145 - WARNING - Q:53 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,147 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,149 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,151 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,153 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,155 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,157 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,159 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:26:05,162 - INFO - --- OMR Grading Results ---
+Correct Answers: 16 / 60
+Score: 16.00%
+2025-10-05 19:26:05,162 - INFO - Results written to 23450_results.csv
+2025-10-05 19:27:24,146 - INFO - Found 315 potential fiducial markers.
+2025-10-05 19:27:24,205 - INFO - Found horizontal separator at y=899
+2025-10-05 19:27:24,270 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:27:24,271 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:27:24,320 - INFO - Roll number grading threshold: 87.60
+2025-10-05 19:27:24,361 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:27:24,381 - INFO - Found vertical separators at x=[347, 701, 1059]
+2025-10-05 19:27:24,430 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:27:24,438 - WARNING - Q:5 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,455 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,457 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,461 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,465 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,469 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,473 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,544 - INFO - MCQ Section 2: Found 87 bubbles.
+2025-10-05 19:27:24,547 - WARNING - Q:17 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,550 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,553 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,559 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,561 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,563 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,565 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,570 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,572 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,574 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,576 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,610 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 19:27:24,611 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,613 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,615 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,620 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,622 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,624 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,626 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,628 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,632 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,638 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,642 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,644 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,647 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,649 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,703 - INFO - MCQ Section 4: Found 91 bubbles.
+2025-10-05 19:27:24,704 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,707 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,709 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,711 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,713 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,715 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,718 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,720 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,723 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,725 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,727 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,730 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,733 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,737 - WARNING - Q:59 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,740 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:27:24,742 - INFO - --- OMR Grading Results ---
+Correct Answers: 15 / 60
+Score: 15.00%
+2025-10-05 19:27:24,743 - INFO - Results written to 23450_results.csv
+2025-10-05 19:28:01,549 - INFO - Found 315 potential fiducial markers.
+2025-10-05 19:28:01,602 - INFO - Found horizontal separator at y=903
+2025-10-05 19:28:01,665 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:28:01,666 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:28:01,716 - INFO - Roll number grading threshold: 87.51
+2025-10-05 19:28:01,757 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:28:01,776 - INFO - Found vertical separators at x=[348, 703, 1062]
+2025-10-05 19:28:01,843 - INFO - MCQ Section 1: Found 81 bubbles.
+2025-10-05 19:28:01,868 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,872 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,874 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,876 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,878 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,881 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,920 - INFO - MCQ Section 2: Found 86 bubbles.
+2025-10-05 19:28:01,924 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,926 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,933 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,935 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,937 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,939 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,941 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,943 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,945 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,948 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:01,950 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,001 - INFO - MCQ Section 3: Found 90 bubbles.
+2025-10-05 19:28:02,002 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,005 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,007 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,009 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,012 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,016 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,018 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,022 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,026 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,030 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,033 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,036 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,038 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,040 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,042 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,085 - INFO - MCQ Section 4: Found 92 bubbles.
+2025-10-05 19:28:02,085 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,088 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,090 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,092 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,094 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,096 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,098 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,100 - WARNING - Q:53 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,103 - WARNING - Q:54 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,106 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,109 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,111 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,114 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,116 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,119 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:02,121 - INFO - --- OMR Grading Results ---
+Correct Answers: 15 / 60
+Score: 15.00%
+2025-10-05 19:28:02,121 - INFO - Results written to 23450_results.csv
+2025-10-05 19:28:46,250 - INFO - Found 322 potential fiducial markers.
+2025-10-05 19:28:46,306 - INFO - Found horizontal separator at y=910
+2025-10-05 19:28:46,372 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:28:46,373 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:28:46,420 - INFO - Roll number grading threshold: 85.20
+2025-10-05 19:28:46,463 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:28:46,485 - INFO - Found vertical separators at x=[346, 702, 1062]
+2025-10-05 19:28:46,567 - INFO - MCQ Section 1: Found 73 bubbles.
+2025-10-05 19:28:46,698 - INFO - MCQ Section 2: Found 84 bubbles.
+2025-10-05 19:28:46,702 - WARNING - Q:17 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,708 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,713 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,715 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,717 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,721 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,724 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,726 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,729 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,784 - INFO - MCQ Section 3: Found 87 bubbles.
+2025-10-05 19:28:46,784 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,786 - WARNING - Q:32 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,790 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,794 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,796 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,798 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,800 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,804 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,812 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,820 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,825 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,861 - INFO - MCQ Section 4: Found 88 bubbles.
+2025-10-05 19:28:46,862 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,869 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,871 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,873 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,880 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,882 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,885 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,887 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,890 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,893 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,895 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,898 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,900 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:28:46,902 - INFO - --- OMR Grading Results ---
+Correct Answers: 8 / 60
+Score: 8.00%
+2025-10-05 19:28:46,903 - INFO - Results written to 67890_results.csv
+2025-10-05 19:42:23,438 - INFO - Found 315 potential fiducial markers.
+2025-10-05 19:42:23,492 - INFO - Found horizontal separator at y=896
+2025-10-05 19:42:23,552 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:42:23,553 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:42:23,602 - INFO - Roll number grading threshold: 88.67
+2025-10-05 19:42:23,646 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:42:23,666 - INFO - Found vertical separators at x=[346, 700, 1058]
+2025-10-05 19:42:23,719 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:42:23,726 - WARNING - Q:2 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,752 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,754 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,756 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,759 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,761 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,763 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,800 - INFO - MCQ Section 2: Found 91 bubbles.
+2025-10-05 19:42:23,801 - WARNING - Q:16 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,803 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,805 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,808 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,812 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,819 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,821 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,824 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,827 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,830 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,833 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,837 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,840 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,843 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,887 - INFO - MCQ Section 3: Found 90 bubbles.
+2025-10-05 19:42:23,888 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,891 - WARNING - Q:32 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,894 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,898 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,900 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,902 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,904 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,906 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,907 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,909 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,912 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,916 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,920 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,922 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,965 - INFO - MCQ Section 4: Found 90 bubbles.
+2025-10-05 19:42:23,966 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,970 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,972 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,974 - WARNING - Q:50 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,976 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,978 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,980 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,982 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,984 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,986 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,988 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,992 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,994 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,997 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:42:23,998 - INFO - --- OMR Grading Results ---
+Correct Answers: 6 / 60
+Score: 6.00%
+2025-10-05 19:42:23,999 - INFO - Results written to 67890_results.csv
+2025-10-05 19:48:50,106 - INFO - Found 315 potential fiducial markers.
+2025-10-05 19:48:50,153 - INFO - Found horizontal separator at y=896
+2025-10-05 19:48:50,216 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:48:50,217 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:48:50,266 - INFO - Roll number grading threshold: 88.67
+2025-10-05 19:48:50,304 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:48:50,322 - INFO - Found vertical separators at x=[346, 700, 1058]
+2025-10-05 19:48:50,357 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:48:50,359 - WARNING - Q:2 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,378 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,380 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,383 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,386 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,387 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,389 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,449 - INFO - MCQ Section 2: Found 91 bubbles.
+2025-10-05 19:48:50,450 - WARNING - Q:16 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,452 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,454 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,456 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,458 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,462 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,464 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,466 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,468 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,470 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,472 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,474 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,476 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,478 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,518 - INFO - MCQ Section 3: Found 90 bubbles.
+2025-10-05 19:48:50,518 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,520 - WARNING - Q:32 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,523 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,526 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,528 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,529 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,532 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,534 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,536 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,538 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,540 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,542 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,544 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,546 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,603 - INFO - MCQ Section 4: Found 90 bubbles.
+2025-10-05 19:48:50,604 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,609 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,611 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,613 - WARNING - Q:50 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,615 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,618 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,622 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,627 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,629 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,631 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,634 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,639 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,642 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,644 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:48:50,646 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 7.00%
+2025-10-05 19:48:50,647 - INFO - Results written to 67890_results.csv
+2025-10-05 19:50:11,441 - INFO - Found 314 potential fiducial markers.
+2025-10-05 19:50:11,487 - INFO - Found horizontal separator at y=892
+2025-10-05 19:50:11,546 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:50:11,547 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:50:11,592 - INFO - Roll number grading threshold: 88.88
+2025-10-05 19:50:11,628 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:50:11,647 - INFO - Found vertical separators at x=[343, 696, 1052]
+2025-10-05 19:50:11,701 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:50:11,704 - WARNING - Q:2 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,720 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,723 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,726 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,729 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,731 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,733 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,783 - INFO - MCQ Section 2: Found 90 bubbles.
+2025-10-05 19:50:11,784 - WARNING - Q:16 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,786 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,788 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,790 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,796 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,798 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,800 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,802 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,804 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,806 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,809 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,811 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,812 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,858 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 19:50:11,859 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,862 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,866 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,869 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,874 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,878 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,880 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,884 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,887 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,891 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,894 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,898 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,900 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,903 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,950 - INFO - MCQ Section 4: Found 92 bubbles.
+2025-10-05 19:50:11,951 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,953 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,955 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,959 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,963 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,966 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,968 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,970 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,973 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,976 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,980 - WARNING - Q:56 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,981 - WARNING - Q:57 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,983 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,985 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,987 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:50:11,989 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 7.00%
+2025-10-05 19:50:11,989 - INFO - Results written to 67890_results.csv
+2025-10-05 19:54:35,135 - INFO - Found 314 potential fiducial markers.
+2025-10-05 19:54:35,182 - INFO - Found horizontal separator at y=892
+2025-10-05 19:54:35,240 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:54:35,240 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:54:35,284 - INFO - Roll number grading threshold: 88.88
+2025-10-05 19:54:35,320 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:54:35,339 - INFO - Found vertical separators at x=[343, 696, 1052]
+2025-10-05 19:54:35,396 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:54:35,398 - WARNING - Q:2 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,417 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,419 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,421 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,423 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,424 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,428 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,458 - INFO - MCQ Section 2: Found 90 bubbles.
+2025-10-05 19:54:35,459 - WARNING - Q:16 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,461 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,463 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,465 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,470 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,472 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,474 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,476 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,478 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,480 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,483 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,485 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,487 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,534 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 19:54:35,534 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,536 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,539 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,541 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,544 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,546 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,548 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,550 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,552 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,556 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,558 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,562 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,566 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,569 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,616 - INFO - MCQ Section 4: Found 92 bubbles.
+2025-10-05 19:54:35,617 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,619 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,620 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,622 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,626 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,629 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,632 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,634 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,636 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,640 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,643 - WARNING - Q:56 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,645 - WARNING - Q:57 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,648 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,650 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,652 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:54:35,655 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 7.00%
+2025-10-05 19:54:35,656 - INFO - Results written to 67890_results.csv
+2025-10-05 19:55:11,608 - INFO - Found 315 potential fiducial markers.
+2025-10-05 19:55:11,658 - INFO - Found horizontal separator at y=896
+2025-10-05 19:55:11,719 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:55:11,720 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:55:11,768 - INFO - Roll number grading threshold: 88.67
+2025-10-05 19:55:11,806 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:55:11,825 - INFO - Found vertical separators at x=[346, 700, 1058]
+2025-10-05 19:55:11,883 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:55:11,888 - WARNING - Q:2 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,906 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,908 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,910 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,912 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,914 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,916 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,961 - INFO - MCQ Section 2: Found 91 bubbles.
+2025-10-05 19:55:11,961 - WARNING - Q:16 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,965 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,969 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,972 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,974 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,978 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,982 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,984 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,988 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,991 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,992 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,995 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,997 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:11,998 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,050 - INFO - MCQ Section 3: Found 90 bubbles.
+2025-10-05 19:55:12,051 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,054 - WARNING - Q:32 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,055 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,060 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,063 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,065 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,067 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,069 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,071 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,073 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,075 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,077 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,079 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,080 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,114 - INFO - MCQ Section 4: Found 90 bubbles.
+2025-10-05 19:55:12,115 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,119 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,121 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,124 - WARNING - Q:50 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,127 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,129 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,132 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,134 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,136 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,140 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,144 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,146 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,148 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,150 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:12,154 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 7.00%
+2025-10-05 19:55:12,155 - INFO - Results written to 67890_results.csv
+2025-10-05 19:55:38,153 - INFO - Found 314 potential fiducial markers.
+2025-10-05 19:55:38,201 - INFO - Found horizontal separator at y=906
+2025-10-05 19:55:38,262 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:55:38,263 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:55:38,315 - INFO - Roll number grading threshold: 89.00
+2025-10-05 19:55:38,360 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:55:38,379 - INFO - Found vertical separators at x=[345, 699, 1057]
+2025-10-05 19:55:38,436 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:55:38,443 - WARNING - Q:5 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,451 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,453 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,455 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,457 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,459 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,460 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,494 - INFO - MCQ Section 2: Found 89 bubbles.
+2025-10-05 19:55:38,497 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,501 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,503 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,507 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,509 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,512 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,515 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,517 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,520 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,522 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,524 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,526 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,570 - INFO - MCQ Section 3: Found 91 bubbles.
+2025-10-05 19:55:38,571 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,573 - WARNING - Q:32 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,575 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,577 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,580 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,582 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,584 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,586 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,588 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,590 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,592 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,594 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,596 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,599 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,601 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,633 - INFO - MCQ Section 4: Found 89 bubbles.
+2025-10-05 19:55:38,634 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,639 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,642 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,644 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,648 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,652 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,654 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,657 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,660 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,662 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,664 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,665 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,669 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,673 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:55:38,676 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 7.00%
+2025-10-05 19:55:38,677 - INFO - Results written to 67890_results.csv
+2025-10-05 19:56:23,104 - INFO - Found 315 potential fiducial markers.
+2025-10-05 19:56:23,151 - INFO - Found horizontal separator at y=896
+2025-10-05 19:56:23,209 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:56:23,210 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:56:23,254 - INFO - Roll number grading threshold: 90.46
+2025-10-05 19:56:23,307 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:56:23,327 - INFO - Found vertical separators at x=[341, 693, 1048]
+2025-10-05 19:56:23,383 - INFO - MCQ Section 1: Found 82 bubbles.
+2025-10-05 19:56:23,385 - WARNING - Q:2 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,400 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,402 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,404 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,406 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,409 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,412 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,445 - INFO - MCQ Section 2: Found 90 bubbles.
+2025-10-05 19:56:23,445 - WARNING - Q:16 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,447 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,452 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,454 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,457 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,460 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,462 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,464 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,466 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,468 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,469 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,471 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,474 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,520 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 19:56:23,521 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,524 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,527 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,534 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,537 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,539 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,543 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,546 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,550 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,552 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,554 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,555 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,557 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,559 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,603 - INFO - MCQ Section 4: Found 90 bubbles.
+2025-10-05 19:56:23,604 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,608 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,611 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,615 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,618 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,620 - WARNING - Q:52 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,622 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,626 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,629 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,630 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,633 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,636 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,638 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,640 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:56:23,643 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 7.00%
+2025-10-05 19:56:23,644 - INFO - Results written to 67890_results.csv
+2025-10-05 19:57:01,590 - INFO - Found 314 potential fiducial markers.
+2025-10-05 19:57:01,643 - INFO - Found horizontal separator at y=912
+2025-10-05 19:57:01,707 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:57:01,708 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:57:01,754 - INFO - Roll number grading threshold: 88.47
+2025-10-05 19:57:01,794 - INFO - --- Decoded Roll Number: 67890 ---
+2025-10-05 19:57:01,813 - INFO - Found vertical separators at x=[349, 708, 1071]
+2025-10-05 19:57:01,875 - INFO - MCQ Section 1: Found 81 bubbles.
+2025-10-05 19:57:01,883 - WARNING - Q:5 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,892 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,894 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,897 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,899 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,901 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,952 - INFO - MCQ Section 2: Found 87 bubbles.
+2025-10-05 19:57:01,955 - WARNING - Q:17 - Found 8 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,963 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,974 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,976 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,978 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,981 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,986 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,988 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,990 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:01,992 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,035 - INFO - MCQ Section 3: Found 90 bubbles.
+2025-10-05 19:57:02,036 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,040 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,044 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,048 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,052 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,056 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,059 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,063 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,067 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,071 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,075 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,078 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,082 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,086 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,090 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,146 - INFO - MCQ Section 4: Found 91 bubbles.
+2025-10-05 19:57:02,147 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,154 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,158 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,162 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,166 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,170 - WARNING - Q:52 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,174 - WARNING - Q:53 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,178 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,182 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,185 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,189 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,193 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,197 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,199 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:02,201 - INFO - --- OMR Grading Results ---
+Correct Answers: 7 / 60
+Score: 7.00%
+2025-10-05 19:57:02,201 - INFO - Results written to 67890_results.csv
+2025-10-05 19:57:25,607 - INFO - Found 320 potential fiducial markers.
+2025-10-05 19:57:25,657 - INFO - Found horizontal separator at y=933
+2025-10-05 19:57:25,720 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:57:25,721 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:57:25,768 - INFO - Roll number grading threshold: 88.65
+2025-10-05 19:57:25,807 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:57:25,826 - INFO - Found vertical separators at x=[356, 720, 1087]
+2025-10-05 19:57:25,885 - INFO - MCQ Section 1: Found 78 bubbles.
+2025-10-05 19:57:25,899 - WARNING - Q:5 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,914 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,918 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,965 - INFO - MCQ Section 2: Found 85 bubbles.
+2025-10-05 19:57:25,968 - WARNING - Q:17 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,970 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,972 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,974 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,982 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,986 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,988 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,992 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,994 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:25,997 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,048 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 19:57:26,049 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,051 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,053 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,058 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,060 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,063 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,066 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,068 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,070 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,072 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,074 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,076 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,078 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,080 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,123 - INFO - MCQ Section 4: Found 92 bubbles.
+2025-10-05 19:57:26,123 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,127 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,129 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,132 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,134 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,136 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,138 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,140 - WARNING - Q:53 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,142 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,145 - WARNING - Q:55 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,148 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,151 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,156 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,159 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,163 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:57:26,165 - INFO - --- OMR Grading Results ---
+Correct Answers: 15 / 60
+Score: 15.00%
+2025-10-05 19:57:26,166 - INFO - Results written to 23450_results.csv
+2025-10-05 19:58:06,280 - INFO - Found 311 potential fiducial markers.
+2025-10-05 19:58:06,334 - INFO - Found horizontal separator at y=927
+2025-10-05 19:58:06,395 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:58:06,396 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:58:06,455 - INFO - Roll number grading threshold: 89.11
+2025-10-05 19:58:06,499 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:58:06,520 - INFO - Found vertical separators at x=[354, 716, 1081]
+2025-10-05 19:58:06,581 - INFO - MCQ Section 1: Found 81 bubbles.
+2025-10-05 19:58:06,603 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,605 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,607 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,610 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,613 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,617 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,669 - INFO - MCQ Section 2: Found 88 bubbles.
+2025-10-05 19:58:06,672 - WARNING - Q:17 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,674 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,676 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,679 - WARNING - Q:20 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,685 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,688 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,690 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,693 - WARNING - Q:25 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,695 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,697 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,699 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,702 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,704 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,738 - INFO - MCQ Section 3: Found 90 bubbles.
+2025-10-05 19:58:06,738 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,742 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,746 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,748 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,752 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,754 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,756 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,759 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,762 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,764 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,766 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,768 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,770 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,772 - WARNING - Q:44 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,774 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,821 - INFO - MCQ Section 4: Found 91 bubbles.
+2025-10-05 19:58:06,822 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,824 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,826 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,829 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,831 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,833 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,836 - WARNING - Q:52 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,838 - WARNING - Q:53 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,840 - WARNING - Q:54 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,843 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,845 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,848 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,850 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,853 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,855 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:06,858 - INFO - --- OMR Grading Results ---
+Correct Answers: 16 / 60
+Score: 16.00%
+2025-10-05 19:58:06,858 - INFO - Results written to 23450_results.csv
+2025-10-05 19:58:40,822 - INFO - Found 311 potential fiducial markers.
+2025-10-05 19:58:40,868 - INFO - Found horizontal separator at y=908
+2025-10-05 19:58:40,932 - INFO - Roll Number: Found 50 bubbles after filtering.
+2025-10-05 19:58:40,933 - INFO - Clustered roll number bubbles into 5 columns.
+2025-10-05 19:58:40,984 - INFO - Roll number grading threshold: 88.24
+2025-10-05 19:58:41,019 - INFO - --- Decoded Roll Number: 23450 ---
+2025-10-05 19:58:41,038 - INFO - Found vertical separators at x=[348, 702, 1061]
+2025-10-05 19:58:41,096 - INFO - MCQ Section 1: Found 81 bubbles.
+2025-10-05 19:58:41,116 - WARNING - Q:10 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,118 - WARNING - Q:11 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,120 - WARNING - Q:12 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,122 - WARNING - Q:13 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,124 - WARNING - Q:14 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,126 - WARNING - Q:15 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,161 - INFO - MCQ Section 2: Found 86 bubbles.
+2025-10-05 19:58:41,164 - WARNING - Q:17 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,166 - WARNING - Q:18 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,168 - WARNING - Q:19 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,174 - WARNING - Q:22 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,176 - WARNING - Q:23 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,178 - WARNING - Q:24 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,182 - WARNING - Q:26 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,184 - WARNING - Q:27 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,186 - WARNING - Q:28 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,188 - WARNING - Q:29 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,191 - WARNING - Q:30 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,241 - INFO - MCQ Section 3: Found 89 bubbles.
+2025-10-05 19:58:41,241 - WARNING - Q:31 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,244 - WARNING - Q:32 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,248 - WARNING - Q:33 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,253 - WARNING - Q:34 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,256 - WARNING - Q:35 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,258 - WARNING - Q:36 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,260 - WARNING - Q:37 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,262 - WARNING - Q:38 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,264 - WARNING - Q:39 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,266 - WARNING - Q:40 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,268 - WARNING - Q:41 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,270 - WARNING - Q:42 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,272 - WARNING - Q:43 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,278 - WARNING - Q:45 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,313 - INFO - MCQ Section 4: Found 92 bubbles.
+2025-10-05 19:58:41,314 - WARNING - Q:46 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,317 - WARNING - Q:47 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,320 - WARNING - Q:48 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,324 - WARNING - Q:49 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,326 - WARNING - Q:50 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,330 - WARNING - Q:51 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,334 - WARNING - Q:52 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,337 - WARNING - Q:53 - Found 7 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,339 - WARNING - Q:54 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,343 - WARNING - Q:55 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,345 - WARNING - Q:56 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,347 - WARNING - Q:57 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,349 - WARNING - Q:58 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,351 - WARNING - Q:59 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,353 - WARNING - Q:60 - Found 6 bubbles, likely noise. Taking rightmost 4.
+2025-10-05 19:58:41,355 - INFO - --- OMR Grading Results ---
+Correct Answers: 16 / 60
+Score: 16.00%
+2025-10-05 19:58:41,355 - INFO - Results written to 23450_results.csv

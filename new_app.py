@@ -87,7 +87,7 @@ def find_fiducial_markers(image):
         
     return reorder(np.array(points, dtype="float32"))
 
-# --- 3. NEW UNIFIED Bubble Detection Function ---
+# --- 3. UNIFIED Bubble Detection Function ---
 
 def resize_for_display(image, max_height=800):
     """Resizes an image to a maximum height for display, maintaining aspect ratio."""
@@ -97,6 +97,7 @@ def resize_for_display(image, max_height=800):
         return cv2.resize(image, (int(w * ratio), max_height))
     return image
 
+
 def find_and_denoise_bubbles(image_section, filter_params, debug_window_name="Debug Bubbles"):
     """
     A unified function to find bubbles in an image section.
@@ -104,11 +105,8 @@ def find_and_denoise_bubbles(image_section, filter_params, debug_window_name="De
     """
     gray = cv2.cvtColor(image_section, cv2.COLOR_BGR2GRAY)
     
-    # Bilateral filter is effective at noise reduction while keeping edges sharp.
-    # This is now the standard method for all bubble detection. 
     denoised = cv2.bilateralFilter(gray, 9, 75, 75)
     
-    # Adaptive thresholding on the cleaned image
     thresh = cv2.adaptiveThreshold(denoised, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
                                      cv2.THRESH_BINARY_INV, 19, 5)
     
@@ -118,22 +116,19 @@ def find_and_denoise_bubbles(image_section, filter_params, debug_window_name="De
     debug_image = image_section.copy()
     for c in cnts:
         (x, y, w, h) = cv2.boundingRect(c)
-        # Draw all contours in red for debugging
         cv2.rectangle(debug_image, (x, y), (x + w, y + h), (0, 0, 255), 2)
         
         ar = w / float(h)
-        # Apply filtering parameters passed to the function
         if (filter_params['min_w'] < w < filter_params['max_w'] and
             filter_params['min_h'] < h < filter_params['max_h'] and
             filter_params['min_ar'] <= ar <= filter_params['max_ar']):
             bubble_contours.append(c)
-            # Draw accepted contours in green
             cv2.rectangle(debug_image, (x, y), (x + w, y + h), (0, 255, 0), 2)
             
     display_debug_image = resize_for_display(debug_image)
     cv2.imshow(debug_window_name, display_debug_image)
     
-    return bubble_contours, gray # Return original gray for intensity analysis
+    return bubble_contours, gray
 
 # --- 4. Section-Specific Grading Logic ---
 
@@ -143,20 +138,16 @@ def decode_roll_number(roll_section_image):
         return "N/A"
 
     h, w = roll_section_image.shape[:2]
-    # REDUCED CROP: User reported that 42% was too aggressive and cut off the first row.
-    # This value has been lowered significantly to prevent this.
-    crop_y_start = int(h * 0.35) # Was 0.42
+    crop_y_start = int(h * 0.35)
     bubble_area = roll_section_image[crop_y_start:, :]
     
-    # Define strict filter parameters for the machine-printed roll number bubbles
     roll_filter_params = {'min_w': 15, 'max_w': 55, 'min_h': 15, 'max_h': 55, 'min_ar': 0.7, 'max_ar': 1.3}
     bubble_contours, gray = find_and_denoise_bubbles(bubble_area, roll_filter_params, "Debug Roll Number")
     
     logging.info(f"Roll Number: Found {len(bubble_contours)} bubbles after filtering.")
-    if len(bubble_contours) < 45:  # 5 digits * 9+ bubbles each
+    if len(bubble_contours) < 45:
         return f"Not Enough Bubbles ({len(bubble_contours)})"
 
-    # Sorting and decoding logic remains the same
     bubble_contours, _ = contours.sort_contours(bubble_contours, method="left-to-right")
     columns = []
     current_column = [bubble_contours[0]]
@@ -175,26 +166,23 @@ def decode_roll_number(roll_section_image):
     logging.info(f"Clustered roll number bubbles into {len(columns)} columns.")
     
     if 5 <= len(columns) <= 6:
-        bubble_columns = columns[-5:] # Take the last 5 columns
+        bubble_columns = columns[-5:]
     else:
         logging.error(f"Expected 5 or 6 columns for roll number, found {len(columns)}.")
         return "Column Count Error"
 
     decoded_roll = []
     all_intensities = [cv2.mean(gray, mask=cv2.drawContours(np.zeros_like(gray), [c], -1, 255, -1))[0] for c in bubble_contours]
-    grading_threshold = np.mean(all_intensities) - (np.std(all_intensities)) # Dynamic threshold
+    grading_threshold = np.mean(all_intensities) - (np.std(all_intensities))
     logging.info(f"Roll number grading threshold: {grading_threshold:.2f}")
 
     for column in bubble_columns:
         column_sorted, _ = contours.sort_contours(column, method="top-to-bottom")
         
-        # --- MODIFIED: Handle any column with more than 10 bubbles ---
-        # If more than 10 contours are found, it's likely noise/header. Ignore the top ones.
         if len(column_sorted) > 10:
             logging.info(f"Found {len(column_sorted)} contours in a column, taking the bottom 10.")
             column_sorted = column_sorted[-10:]
 
-        # A valid column must now have exactly 10 bubbles (0-9)
         if len(column_sorted) != 10:
             logging.warning(f"Column has {len(column_sorted)} bubbles after cleanup (expected 10). Skipping.")
             decoded_roll.append("X")
@@ -214,15 +202,14 @@ def decode_roll_number(roll_section_image):
     return "".join(decoded_roll)
 
 def grade_mcq_section(section_image, question_offset, output_image, section_x_offset, section_y_offset):
-    """Grades a single MCQ section using the unified bubble detector."""
+    """Grades a single MCQ section using a robust, per-question grading method."""
     if section_image is None or section_image.size == 0:
         return [], 0
 
     h_sec, w_sec = section_image.shape[:2]
-    y_crop_offset = int(h_sec * 0.05) # Crop header
+    y_crop_offset = int(h_sec * 0.05)
     bubble_area = section_image[y_crop_offset:, :]
     
-    # Define more lenient filter parameters for human-filled MCQ bubbles
     mcq_filter_params = {'min_w': 8, 'max_w': 60, 'min_h': 8, 'max_h': 60, 'min_ar': 0.2, 'max_ar': 5.0}
     bubble_contours, gray = find_and_denoise_bubbles(bubble_area, mcq_filter_params, f"Debug MCQ Section {question_offset//15+1}")
     
@@ -230,11 +217,6 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
     if not bubble_contours:
         return [], 0
 
-    all_intensities = [cv2.mean(gray, mask=cv2.drawContours(np.zeros_like(gray), [c], -1, 255, -1))[0] for c in bubble_contours]
-    grading_threshold = np.mean(all_intensities) - np.std(all_intensities)
-    logging.info(f"MCQ Section {question_offset//15+1} grading threshold: {grading_threshold:.2f}")
-
-    # Group all bubbles into question rows
     question_rows = []
     if bubble_contours:
         bubble_contours = contours.sort_contours(bubble_contours, method="top-to-bottom")[0]
@@ -256,30 +238,74 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
         if len(row) < 4:
             logging.warning(f"Q:{question_num+1} - Found only {len(row)} bubbles. Skipping.")
             continue
-        if len(row) > 5: # Often a question number contour is picked up
-             logging.warning(f"Q:{question_num+1} - Found {len(row)} bubbles, likely noise. Taking rightmost 4.")
-             row = contours.sort_contours(row, method="left-to-right")[0][-4:]
+        if len(row) > 5:
+            logging.warning(f"Q:{question_num+1} - Found {len(row)} bubbles, likely noise. Taking rightmost 4.")
+            row = contours.sort_contours(row, method="left-to-right")[0][-4:]
         if len(row) == 5:
-             row = contours.sort_contours(row, method="left-to-right")[0][1:] # Assume first is question number
+            row = contours.sort_contours(row, method="left-to-right")[0][1:]
         
         question_bubbles = contours.sort_contours(row, method="left-to-right")[0]
         
-        marked_count = 0
-        marked_choice_idx = -1
-        for choice_idx, bubble_contour in enumerate(question_bubbles):
+        intensities = []
+        for bubble_contour in question_bubbles:
             mask = np.zeros_like(gray)
-            cv2.drawContours(mask, [bubble_contour], -1, 255, -1)
-            if cv2.mean(gray, mask=mask)[0] < grading_threshold:
-                marked_choice_idx = choice_idx
-                marked_count += 1
+            (x, y, w, h) = cv2.boundingRect(bubble_contour)
+            center_x, center_y = x + w // 2, y + h // 2
+            # --- UPDATED: Radius scaled for 50% of the area ---
+            radius = int(min(w, h) / 2 * 0.707) 
+            cv2.circle(mask, (center_x, center_y), radius, 255, -1)
+            intensities.append(cv2.mean(gray, mask=mask)[0])
+
+        # --- NEW ROBUST GRADING LOGIC ---
+        marked_choice_idx = -1
+        marked_count = 0
+        
+        if len(intensities) == 4:
+            sorted_intensities = sorted(intensities)
+            min_intensity = sorted_intensities[0]
+            second_min_intensity = sorted_intensities[1]
+            max_intensity = sorted_intensities[3]
+
+            # --- TUNABLE PARAMETERS ---
+            # The row needs at least this much contrast to be considered for grading.
+            CONTRAST_THRESHOLD = 60 
+            # The darkest bubble must be darker than this value to be a potential mark.
+            BLANK_THRESHOLD = 170
+            # The winning bubble must be this much darker than the runner-up.
+            SEPARATION_GAP = 20
+
+            # 1. Check if the row has enough contrast and isn't completely blank.
+            if (max_intensity - min_intensity) > CONTRAST_THRESHOLD and min_intensity < BLANK_THRESHOLD:
                 
+                # 2. Check if the darkest bubble is clearly separated from the next darkest.
+                if (second_min_intensity - min_intensity) > SEPARATION_GAP:
+                    marked_count = 1
+                    marked_choice_idx = intensities.index(min_intensity)
+                else:
+                    # If not clearly separated, it's likely a multi-mark error.
+                    # Count how many bubbles are clustered near the darkest value.
+                    dark_threshold = second_min_intensity + (SEPARATION_GAP / 2.0)
+                    dark_bubbles = [i for i in intensities if i < dark_threshold]
+                    marked_count = len(dark_bubbles)
+            else:
+                # Not enough contrast or too bright, so it's a blank row.
+                marked_count = 0
+        
+        print(f"Q:{question_num+1} Intensities: {[f'{i:.2f}' for i in intensities]}, Marked Count: {marked_count}, Marked Choice: {marked_choice_idx}")
+        # --- END OF NEW LOGIC ---
+        
         is_correct = False
         correct_answers = ANSWER_KEY.get(question_num)
+
         if marked_count == 1:
-            if isinstance(correct_answers, list) and marked_choice_idx in correct_answers:
-                is_correct = True
-            elif marked_choice_idx == correct_answers:
-                is_correct = True
+            if correct_answers is None:
+                is_correct = False
+            elif isinstance(correct_answers, list):
+                if marked_choice_idx in correct_answers:
+                    is_correct = True
+            else:
+                if marked_choice_idx == correct_answers:
+                    is_correct = True
         
         if is_correct:
             section_correct += 1
@@ -289,10 +315,10 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
         
         section_answers.append({'question': question_num + 1, 'student_answer': student_ans_char, 'correct_answer': correct_ans_char, 'result': 'Correct' if is_correct else 'Incorrect'})
         
-        # Draw feedback on the main output image
         if correct_answers is not None:
             color = (0, 255, 0) if is_correct else (0, 0, 255)
             answers_to_draw = correct_answers if isinstance(correct_answers, list) else [correct_answers]
+            
             for answer_idx in answers_to_draw:
                 if answer_idx < len(question_bubbles):
                     (x_b, y_b, w_b, h_b) = cv2.boundingRect(question_bubbles[answer_idx])
@@ -300,7 +326,14 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
                     final_y = y_b + section_y_offset + y_crop_offset
                     cv2.rectangle(output_image, (final_x, final_y), (final_x + w_b, final_y + h_b), color, 3)
                     
+            if not is_correct and marked_choice_idx != -1 and marked_count == 1:
+                (x_b, y_b, w_b, h_b) = cv2.boundingRect(question_bubbles[marked_choice_idx])
+                final_x = x_b + section_x_offset
+                final_y = y_b + section_y_offset + y_crop_offset
+                cv2.circle(output_image, (final_x + w_b//2, final_y + h_b//2), int(w_b/2), (0, 0, 255), 2)
+                
     return section_answers, section_correct
+
 
 
 # --- 5. Main Processing Pipeline ---
@@ -313,13 +346,11 @@ def process_omr_sheet(image_path):
         logging.error(f"Could not load image from {image_path}. Check the path.")
         return
 
-    # 1. Align the paper
     corners = find_fiducial_markers(original_image)
     if corners is None:
         return
     paper = four_point_transform(original_image, corners)
     
-    # 2. Crop margins
     h_paper, w_paper = paper.shape[:2]
     crop_margin_top = int(h_paper * 0.02)
     crop_margin_bottom = int(h_paper * 0.02)
@@ -328,16 +359,14 @@ def process_omr_sheet(image_path):
     cropped_paper = paper[crop_margin_top:h_paper - crop_margin_bottom, crop_margin_x_left:w_paper - crop_margin_x_right]
     output_image = cropped_paper.copy()
     
-    # 3. Split into Roll Number and MCQ sections
     h_crop, w_crop, _ = cropped_paper.shape
-    # Find horizontal line separator; fall back to a percentage if not found
-    split_y = int(h_crop * 0.22) # Fallback value
+    split_y = int(h_crop * 0.22)
     gray_split = cv2.cvtColor(cropped_paper, cv2.COLOR_BGR2GRAY)
     thresh_split = cv2.adaptiveThreshold(cv2.GaussianBlur(gray_split, (5,5), 0), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 21, 5)
     cnts_split, _ = cv2.findContours(thresh_split, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     for c in cnts_split:
         x, y, w, h = cv2.boundingRect(c)
-        if w > w_crop * 0.8 and h < 20: # A long, thin contour is likely the separator
+        if w > w_crop * 0.8 and h < 20:
             split_y = y + h // 2
             logging.info(f"Found horizontal separator at y={split_y}")
             break
@@ -345,15 +374,12 @@ def process_omr_sheet(image_path):
     roll_section = cropped_paper[0:split_y, :]
     mcq_section_full = cropped_paper[split_y:, :]
 
-    # 4. Decode Roll Number
     roll_number = decode_roll_number(roll_section)
     logging.info(f"--- Decoded Roll Number: {roll_number} ---")
 
-    # 5. Split MCQ section vertically and grade each part
     total_correct = 0
     all_student_answers = []
     
-    # Find vertical separators
     mcq_gray = cv2.cvtColor(mcq_section_full, cv2.COLOR_BGR2GRAY)
     mcq_thresh = cv2.adaptiveThreshold(cv2.GaussianBlur(mcq_gray, (5,5), 0), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 21, 5)
     vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 40))
@@ -363,7 +389,7 @@ def process_omr_sheet(image_path):
     separator_xs = []
     for c in cnts_lines:
         if cv2.boundingRect(c)[3] > mcq_section_full.shape[0] * 0.5:
-             separator_xs.append(cv2.boundingRect(c)[0])
+            separator_xs.append(cv2.boundingRect(c)[0])
     
     separator_xs.sort()
     
@@ -385,13 +411,11 @@ def process_omr_sheet(image_path):
     else:
         logging.error(f"Failed to find 3 clear vertical separators. Found {len(separator_xs)}. Grading aborted.")
 
-    # 6. Finalize and display results
-    score = (total_correct / len(ANSWER_KEY)) * 100 if ANSWER_KEY else 0
+    score = total_correct
     logging.info(f"--- OMR Grading Results ---\nCorrect Answers: {total_correct} / {len(ANSWER_KEY)}\nScore: {score:.2f}%")
     
     all_student_answers.sort(key=lambda x: x['question'])
     
-    # Write to CSV
     csv_filename = f"{roll_number}_results.csv" if roll_number.isalnum() else f"{os.path.splitext(os.path.basename(image_path))[0]}_results.csv"
     try:
         with open(csv_filename, 'w', newline='') as csvfile:
@@ -406,11 +430,9 @@ def process_omr_sheet(image_path):
     except IOError as e:
         logging.error(f"Could not write to CSV file {csv_filename}. Reason: {e}")
         
-    # Add text to the output image
     cv2.putText(output_image, f"Roll: {roll_number}", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (255, 100, 0), 3)
     cv2.putText(output_image, f"Score: {score:.2f}%", (20, 110), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255), 3)
     
-    # Resize for display
     result_image = resize_for_display(output_image, max_height=700)
         
     cv2.imshow("Graded Sheet", result_image)
@@ -421,13 +443,10 @@ def process_omr_sheet(image_path):
 # --- Main execution block ---
 if __name__ == "__main__":
     # IMPORTANT: Replace this with the correct path to your image file
-    image_file = 'final_3.jpg' 
+    image_file = 'final_38.jpg' 
     if os.path.exists(image_file):
         process_omr_sheet(image_file)
     else:
         print(f"Error: Image file not found at '{image_file}'. Please update the path.")
-
-
-
 
 

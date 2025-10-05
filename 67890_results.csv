@@ -1,5 +1,5 @@
 Roll Number,67890
-Score (%),11.67
+Score (%),7.00
 
 Question Number,Student Answer,Correct Answer,Result
 1,A,B,Incorrect
@@ -18,7 +18,7 @@ Question Number,Student Answer,Correct Answer,Result
 14,Blank,C,Incorrect
 15,A,B,Incorrect
 16,A,A,Correct
-17,Error,D,Incorrect
+17,D,D,Correct
 18,C,C,Correct
 19,Blank,B,Incorrect
 20,Blank,A,Incorrect
@@ -28,7 +28,7 @@ Question Number,Student Answer,Correct Answer,Result
 24,D,D,Correct
 25,Blank,B,Incorrect
 26,Blank,A,Incorrect
-27,C,C,Correct
+27,Blank,C,Incorrect
 28,Blank,D,Incorrect
 29,Blank,B,Incorrect
 30,A,A,Correct
