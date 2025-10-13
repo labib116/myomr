@@ -4,6 +4,7 @@ from imutils import contours
 import os
 import csv
 import logging
+from PIL import Image # Pillow is still needed for compression logic
 
 # --- 1. Setup & Configuration ---
 
@@ -22,7 +23,7 @@ def setup_logging():
 
 # Answer key and choice mapping remain the same
 ANSWER_KEY = {
-    0: 1, 1: 3, 2: 0, 3: 2, 4: 1, 5: 0, 6: 1, 7: 2, 8: 3, 9: 0, 10: 1, 11: 3, 12: 0, 13: 2, 14: 1,
+    0: 1, 1: 2, 2: 0, 3: 2, 4: 1, 5: 0, 6: 1, 7: 2, 8: 3, 9: 0, 10: 1, 11: 3, 12: 0, 13: 2, 14: 1,
     15: 0, 16: 3, 17: 2, 18: 1, 19: 0, 20: 1, 21: 2, 22: [0, 2], 23: 3, 24: 1, 25: 0, 26: 2, 27: 3, 28: 1, 29: 0,
     30: 3, 31: 2, 32: 1, 33: 0, 34: 1, 35: 2, 36: 0, 37: 3, 38: 1, 39: 2, 40: 0, 41: 1, 42: 3, 43: 2, 44: 0,
     45: 1, 46: 3, 47: 0, 48: 2, 49: 1, 50: 3, 51: 0, 52: 1, 53: 2, 54: 3, 55: 0, 56: 1, 57: 2, 58: 3, 59: 0
@@ -31,6 +32,53 @@ CHOICE_MAP = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
 
 
 # --- 2. Core Image Processing Utilities ---
+
+def compress_image_on_the_fly(cv2_image, max_size=1920, quality=75):
+    """
+    [NEW IN-MEMORY COMPRESSION]
+    Converts a cv2 (NumPy) image to a Pillow image, applies resizing and JPEG 
+    compression in memory, and converts it back to a cv2 image.
+
+    :param cv2_image: Input image as a NumPy array (BGR format).
+    :param max_size: The maximum dimension (longest side) in pixels.
+    :param quality: JPEG quality (1-95).
+    :return: Compressed image as a NumPy array (BGR format).
+    """
+    try:
+        # 1. Convert cv2 (BGR) to Pillow (RGB)
+        # OpenCV reads as BGR, Pillow expects RGB
+        img_rgb = cv2.cvtColor(cv2_image, cv2.COLOR_BGR2RGB)
+        img = Image.fromarray(img_rgb)
+        
+        # 2. Resizing logic
+        width, height = img.size
+        
+        if max(width, height) > max_size:
+            ratio = max_size / max(width, height)
+            new_width = int(width * ratio)
+            new_height = int(height * ratio)
+            
+            img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
+        
+        # 3. Apply JPEG compression in memory
+        # We need a BytesIO object to simulate saving to disk
+        from io import BytesIO
+        buffer = BytesIO()
+        img.save(buffer, "JPEG", optimize=True, quality=quality)
+        buffer.seek(0)
+        
+        # 4. Read the compressed bytes back into a cv2 image
+        file_bytes = np.asarray(bytearray(buffer.read()), dtype=np.uint8)
+        compressed_cv2_image = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
+        
+        logging.info(f"Image compressed in memory. Original: {width}x{height}, New: {img.size}. Quality: {quality}")
+        
+        return compressed_cv2_image
+
+    except Exception as e:
+        logging.error(f"In-memory compression failed. Reason: {e}. Returning original image.")
+        return cv2_image # Fallback: return the original image if compression fails
+
 
 def reorder(myPoints):
     """Reorders four corner points: top-left, top-right, bottom-left, bottom-right."""
@@ -57,8 +105,27 @@ def four_point_transform(image, pts):
     matrix = cv2.getPerspectiveTransform(pts, dst)
     return cv2.warpPerspective(image, matrix, (maxWidth, maxHeight))
 
+# ... (preprocess_image, find_fiducial_markers, resize_for_display, 
+# find_and_denoise_bubbles, decode_roll_number, grade_mcq_section functions remain the same) ...
+
+def preprocess_image(image):
+    """Applies CLAHE and a median filter for robust noise and lighting correction."""
+    # 1. Convert to a single channel (Luminance)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    
+    # 2. Apply CLAHE (Contrast Limited Adaptive Histogram Equalization)
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    clahe_image = clahe.apply(gray)
+    
+    # 3. Apply a Median Filter to remove salt-and-pepper noise/compression artifacts
+    denoised_image = cv2.medianBlur(clahe_image, 5) # Kernel size 5 is a good starting point
+    
+    return denoised_image
+
+
 def find_fiducial_markers(image):
     """Finds the four corner markers on the OMR sheet for alignment."""
+    # This step uses the initial, possibly compressed, BGR image
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
     _, thresh = cv2.threshold(blurred, 200, 255, cv2.THRESH_BINARY_INV)
@@ -239,8 +306,8 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
             logging.warning(f"Q:{question_num+1} - Found only {len(row)} bubbles. Skipping.")
             continue
         if len(row) > 5:
-            logging.warning(f"Q:{question_num+1} - Found {len(row)} bubbles, likely noise. Taking rightmost 4.")
-            row = contours.sort_contours(row, method="left-to-right")[0][-4:]
+            logging.warning(f"Q:{question_num+1} - Found {len(row)} bubbles, likely noise. Taking rightmost 4 or 5.")
+            row = contours.sort_contours(row, method="left-to-right")[0][-5:]
         if len(row) == 5:
             row = contours.sort_contours(row, method="left-to-right")[0][1:]
         
@@ -267,11 +334,8 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
             max_intensity = sorted_intensities[3]
 
             # --- TUNABLE PARAMETERS ---
-            # The row needs at least this much contrast to be considered for grading.
             CONTRAST_THRESHOLD = 60 
-            # The darkest bubble must be darker than this value to be a potential mark.
             BLANK_THRESHOLD = 170
-            # The winning bubble must be this much darker than the runner-up.
             SEPARATION_GAP = 20
 
             # 1. Check if the row has enough contrast and isn't completely blank.
@@ -283,7 +347,6 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
                     marked_choice_idx = intensities.index(min_intensity)
                 else:
                     # If not clearly separated, it's likely a multi-mark error.
-                    # Count how many bubbles are clustered near the darkest value.
                     dark_threshold = second_min_intensity + (SEPARATION_GAP / 2.0)
                     dark_bubbles = [i for i in intensities if i < dark_threshold]
                     marked_count = len(dark_bubbles)
@@ -339,17 +402,29 @@ def grade_mcq_section(section_image, question_offset, output_image, section_x_of
 # --- 5. Main Processing Pipeline ---
 
 def process_omr_sheet(image_path):
-    """Main function to load an image and run the entire grading process."""
+    """
+    Main function to load an image, apply in-memory compression pre-processing, 
+    and run the entire grading process.
+    """
     setup_logging()
+    
+    # 1. Load the original image
     original_image = cv2.imread(image_path)
     if original_image is None:
         logging.error(f"Could not load image from {image_path}. Check the path.")
         return
 
-    corners = find_fiducial_markers(original_image)
+    # 2. Apply in-memory compression (NEW STEP)
+    logging.info(f"Applying in-memory compression pre-processing...")
+    compressed_image = compress_image_on_the_fly(original_image, max_size=1920, quality=75)
+    
+    # 3. Use the compressed image for the rest of the pipeline
+    corners = find_fiducial_markers(compressed_image)
     if corners is None:
         return
-    paper = four_point_transform(original_image, corners)
+    
+    # The rest of the pipeline operates on the perspective-transformed image
+    paper = four_point_transform(compressed_image, corners)
     
     h_paper, w_paper = paper.shape[:2]
     crop_margin_top = int(h_paper * 0.02)
@@ -443,10 +518,17 @@ def process_omr_sheet(image_path):
 # --- Main execution block ---
 if __name__ == "__main__":
     # IMPORTANT: Replace this with the correct path to your image file
-    image_file = 'final_38.jpg' 
+    image_file = 'final_54.jpg' 
+    
+    # Check for PIL/Pillow installation
+    try:
+        from PIL import Image
+    except ImportError:
+        print("ERROR: Pillow (PIL Fork) is not installed.")
+        print("Please install it using: pip install Pillow")
+        exit()
+        
     if os.path.exists(image_file):
         process_omr_sheet(image_file)
     else:
         print(f"Error: Image file not found at '{image_file}'. Please update the path.")
-
-
